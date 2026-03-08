@@ -25,7 +25,7 @@
             position: absolute;
             bottom: -10px;
             right: -10px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #D32F2F 0%, #D32F2F 100%);
             color: white;
             padding: 4px 12px;
             border-radius: 20px;
@@ -41,7 +41,7 @@
             font-family: 'Courier New', monospace;
             font-weight: bold;
             font-size: 24px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #D32F2F 0%, #D32F2F 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -55,7 +55,7 @@
             margin-bottom: 20px;
         }
         button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #D32F2F 0%, #D32F2F 100%);
             color: white;
             border: none;
             padding: 12px 24px;
@@ -139,8 +139,8 @@
                 // Draw AI subtitle
                 ctx.font = 'bold 48px Arial';
                 const gradient = ctx.createLinearGradient(0, canvas.height - 60, canvas.width, canvas.height - 60);
-                gradient.addColorStop(0, '#667eea');
-                gradient.addColorStop(1, '#764ba2');
+                gradient.addColorStop(0, '#D32F2F');
+                gradient.addColorStop(1, '#D32F2F');
                 ctx.fillStyle = gradient;
                 ctx.textAlign = 'center';
                 ctx.fillText('AI-POWERED ORDERING', canvas.width / 2, canvas.height - 25);
@@ -176,8 +176,8 @@
                     
                     // Badge background
                     const gradient = ctx.createLinearGradient(x, y, x + badgeWidth, y + badgeHeight);
-                    gradient.addColorStop(0, '#667eea');
-                    gradient.addColorStop(1, '#764ba2');
+                    gradient.addColorStop(0, '#D32F2F');
+                    gradient.addColorStop(1, '#D32F2F');
                     
                     ctx.fillStyle = gradient;
                     ctx.beginPath();
@@ -202,8 +202,8 @@
                 } else {
                     // Draw integrated .ai text
                     const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
-                    gradient.addColorStop(0, '#667eea');
-                    gradient.addColorStop(1, '#764ba2');
+                    gradient.addColorStop(0, '#D32F2F');
+                    gradient.addColorStop(1, '#D32F2F');
                     
                     ctx.fillStyle = gradient;
                     ctx.font = 'bold 72px Courier New';
