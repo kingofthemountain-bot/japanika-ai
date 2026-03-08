@@ -1,0 +1,56 @@
+{
+  "batchNumber": 6,
+  "timestamp": "2026-03-08T08:09:03.575Z",
+  "dishes": [
+    {
+      "name": "פרלינה נוצ׳לטו",
+      "nameEn": "Praline Nutella",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/praline-nutella.png"
+    },
+    {
+      "name": "בלונדיז",
+      "nameEn": "Blondies",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/blondies.png"
+    },
+    {
+      "name": "עוגת גבינה באסקית",
+      "nameEn": "Basque Cheesecake",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/basque-cheesecake.png"
+    },
+    {
+      "name": "קוקיז קינדר ענק",
+      "nameEn": "Giant Kinder Cookie",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/giant-kinder-cookie.png"
+    },
+    {
+      "name": "כדור רושה",
+      "nameEn": "Rocher Ball",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/rocher-ball.png"
+    },
+    {
+      "name": "סוויט לייק צ׳וקלט",
+      "nameEn": "Sweet Like Chocolate",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/sweet-like-chocolate.png"
+    },
+    {
+      "name": "קראק פאי",
+      "nameEn": "Crack Pie",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/crack-pie.png"
+    },
+    {
+      "name": "ברולה",
+      "nameEn": "Crème Brûlée",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/crme-brle.png"
+    },
+    {
+      "name": "מגש מסיבה גדול",
+      "nameEn": "Large Party Platter",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/large-party-platter.png"
+    },
+    {
+      "name": "מגש מסיבה קטן",
+      "nameEn": "Small Party Platter",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/small-party-platter.png"
+    }
+  ]
+}

@@ -3,1598 +3,1776 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>תפריט - Japanika.AI</title>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>תפריט - ג'פניקה</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="nav">
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="index.html">
-                    <div class="logo-with-ai">
-                        <img src="images/logo/japanika-logo-ai.png" alt="Japanika.AI" class="logo-image">
-                        <span class="ai-badge">AI</span>
-                    </div>
+                    <img src="images/logo/japanika-logo-transparent.png?v=4" alt="ג'פניקה" class="logo-image">
                 </a>
             </div>
             <div class="nav-links">
-                <a href="index.html" class="nav-link">🤖 AI הזמנה</a>
-                <a href="menu.html" class="nav-link active">תפריט</a>
-                <a href="api.html" class="nav-link">API</a>
+                <a href="menu-static.html" class="nav-link active">תפריט</a>
+                <a href="about.html" class="nav-link">אודות</a>
                 <a href="branches.html" class="nav-link">סניפים</a>
+                <a href="https://www.japanika.net/" target="_blank" class="nav-link cta-button">הזמינו עכשיו</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
-    <section style="padding: 150px 20px 80px; text-align: center; background: var(--primary-black); color: white;">
-        <h1 style="font-size: 3rem; margin-bottom: 1rem;">🍱 התפריט המלא</h1>
-        <p style="font-size: 1.2rem; opacity: 0.9;">גלו את המנות שלנו עם תמונות AI</p>
-        <a href="index.html#ai-order" class="btn btn-primary" style="margin-top: 1rem;">הזמינו עם AI</a>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">התפריט שלנו</h1>
+            <p class="page-subtitle">111 מנות מהמטבח האסייתי</p>
+        </div>
     </section>
 
+    <!-- Menu Categories Navigation -->
+    <div class="menu-nav sticky">
+        <div class="container">
+            <div class="category-pills">
+                <a href="#appetizers" class="category-pill">מנות פתיחה</a>
+                <a href="#soups" class="category-pill">מרקים</a>
+                <a href="#salads" class="category-pill">סלטים</a>
+                <a href="#bao" class="category-pill">באן</a>
+                <a href="#sushi-custom" class="category-pill">סושי בהרכבה</a>
+                <a href="#special-sushi" class="category-pill">ספיישל סושי</a>
+                <a href="#combinations" class="category-pill">קומבינציות</a>
+                <a href="#wok" class="category-pill">ווק</a>
+                <a href="#rice-grill" class="category-pill">אורז וגריל</a>
+                <a href="#kids" class="category-pill">ג'פניקידס</a>
+                <a href="#desserts" class="category-pill">קינוחים</a>
+                <a href="#party-trays" class="category-pill">מגשים</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Content - STATIC HTML WITH IMAGES HARD-CODED -->
     <section class="menu-section">
         <div class="container">
-            <!-- Appetizers -->
-            <div class="menu-category">
-                <h2>🥟 מנות פתיחה <span style="color: #666; font-size: 1rem;">(Appetizers)</span></h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="images/dishes/crispy-rice-spicy-salmon.png" alt="Crispy Rice Spicy Salmon" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קריספי רייס ספייסי סלמון</strong>
-                                    <div class="menu-item-name-en">Crispy Rice Spicy Salmon</div>
-                                </div>
-                                <div class="menu-item-price">₪54</div>
-                            </div>
-                        </div>
-                    </div>
+            <div id="menu-container">
+
+    <div class="menu-category" id="appetizers">
+        <div class="category-header fade-in-scroll">
+            <h2 class="category-title">מנות פתיחה</h2>
+            <p class="category-subtitle">Appetizers</p>
+        </div>
+        <div class="dishes-grid">
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/crispy-rice-spicy-salmon.png" alt="Crispy Rice Spicy Salmon" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קריספי רייס ספייסי סלמון</h3>
+                    <p class="dish-description">Crispy Rice Spicy Salmon</p>
                     
-                    <div class="menu-item">
-                        <img src="images/dishes/crispy-rice-spicy-sea-bass.png" alt="Crispy Rice Spicy Sea Bass" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קריספי רייס ספייסי דניס</strong>
-                                    <div class="menu-item-name-en">Crispy Rice Spicy Sea Bass</div>
-                                </div>
-                                <div class="menu-item-price">₪52</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/crispy-rice-spicy-tuna.png" alt="Crispy Rice Spicy Tuna" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קריספי רייס ספייסי טונה</strong>
-                                    <div class="menu-item-name-en">Crispy Rice Spicy Tuna</div>
-                                </div>
-                                <div class="menu-item-price">₪52</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/wonton.png" alt="Wonton" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>וונטון</strong>
-                                    <div class="menu-item-name-en">Wonton</div>
-                                </div>
-                                <div class="menu-item-price">₪34</div>
-                            </div>
-                            <div class="menu-item-tags">
-                                <span class="tag">vegan</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/salmon-mozzarella-triangles.png" alt="Salmon & Mozzarella Triangles" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>משולשי סלמון ומוצרלה</strong>
-                                    <div class="menu-item-name-en">Salmon & Mozzarella Triangles</div>
-                                </div>
-                                <div class="menu-item-price">₪46</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/chicken-nams.png" alt="Chicken Nams" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>נאמס עוף</strong>
-                                    <div class="menu-item-name-en">Chicken Nams</div>
-                                </div>
-                                <div class="menu-item-price">₪47</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/edamame.png" alt="Edamame" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>אדממה</strong>
-                                    <div class="menu-item-name-en">Edamame</div>
-                                </div>
-                                <div class="menu-item-price">₪21</div>
-                            </div>
-                            <div class="menu-item-tags">
-                                <span class="tag">vegan</span>
-                                <span class="tag">gluten-free</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/vegetable-spring-roll.png" alt="Vegetable Spring Roll" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>ספרינג רול ירקות</strong>
-                                    <div class="menu-item-name-en">Vegetable Spring Roll</div>
-                                </div>
-                                <div class="menu-item-price">₪35</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/chicken-gyoza-5pc.png" alt="Chicken Gyoza 5pc" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>גיוזה עוף 5 יח'</strong>
-                                    <div class="menu-item-name-en">Chicken Gyoza 5pc</div>
-                                </div>
-                                <div class="menu-item-price">₪35</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/sweet-potato-gyoza-5pc.png" alt="Sweet Potato Gyoza 5pc" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>גיוזה בטטה 5 יח'</strong>
-                                    <div class="menu-item-name-en">Sweet Potato Gyoza 5pc</div>
-                                </div>
-                                <div class="menu-item-price">₪32</div>
-                            </div>
-                            <div class="menu-item-tags">
-                                <span class="tag">vegan</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/wings-small.png" alt="Wings Small" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>כנפיים קטן</strong>
-                                    <div class="menu-item-name-en">Wings Small</div>
-                                </div>
-                                <div class="menu-item-price">₪29</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/wings-large.png" alt="Wings Large" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>כנפיים גדול</strong>
-                                    <div class="menu-item-name-en">Wings Large</div>
-                                </div>
-                                <div class="menu-item-price">₪41</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/crispy-sweet-potato.png" alt="Crispy Sweet Potato" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קריספי בטטה</strong>
-                                    <div class="menu-item-name-en">Crispy Sweet Potato</div>
-                                </div>
-                                <div class="menu-item-price">₪27</div>
-                            </div>
-                            <div class="menu-item-tags">
-                                <span class="tag">vegan</span>
-                            </div>
-                        </div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪54</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Soups -->
-            <div class="menu-category">
-                <h2>🍜 מרקים <span style="color: #666; font-size: 1rem;">(Soups)</span></h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="images/dishes/tom-yum-thai-vegetables.png" alt="Tom Yum Thai Vegetables" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>טום יאם תאילנדי ירקות</strong>
-                                    <div class="menu-item-name-en">Tom Yum Thai Vegetables</div>
-                                </div>
-                                <div class="menu-item-price">₪31</div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/crispy-rice-spicy-sea-bass.png" alt="Crispy Rice Spicy Sea Bass" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קריספי רייס ספייסי דניס</h3>
+                    <p class="dish-description">Crispy Rice Spicy Sea Bass</p>
                     
-                    <div class="menu-item">
-                        <img src="images/dishes/tom-yum-thai-chicken.png" alt="Tom Yum Thai Chicken" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>טום יאם תאילנדי עוף</strong>
-                                    <div class="menu-item-name-en">Tom Yum Thai Chicken</div>
-                                </div>
-                                <div class="menu-item-price">₪46</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/miso-soup.png" alt="Miso Soup" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>מרק מיסו</strong>
-                                    <div class="menu-item-name-en">Miso Soup</div>
-                                </div>
-                                <div class="menu-item-price">₪21</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/sweet-potato-ginger-soup.png" alt="Sweet Potato & Ginger Soup" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>מרק בטטה וג׳ינג׳ר</strong>
-                                    <div class="menu-item-name-en">Sweet Potato & Ginger Soup</div>
-                                </div>
-                                <div class="menu-item-price">₪36</div>
-                            </div>
-                            <div class="menu-item-tags">
-                                <span class="tag">vegan</span>
-                            </div>
-                        </div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪52</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Salads -->
-            <div class="menu-category">
-                <h2>🥗 סלטים <span style="color: #666; font-size: 1rem;">(Salads)</span></h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="images/dishes/crispy-apple-salad.png" alt="Crispy Apple Salad" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>סלט תפוחים קריספי</strong>
-                                    <div class="menu-item-name-en">Crispy Apple Salad</div>
-                                </div>
-                                <div class="menu-item-price">₪42</div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/crispy-rice-spicy-tuna.png" alt="Crispy Rice Spicy Tuna" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קריספי רייס ספייסי טונה</h3>
+                    <p class="dish-description">Crispy Rice Spicy Tuna</p>
                     
-                    <div class="menu-item">
-                        <img src="images/dishes/spicy-chicken-salad.png" alt="Spicy Chicken Salad" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>ספייסי צ׳יקן סלט</strong>
-                                    <div class="menu-item-name-en">Spicy Chicken Salad</div>
-                                </div>
-                                <div class="menu-item-price">₪49</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/wakame-salad.png" alt="Wakame Salad" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>סלט וואקמה</strong>
-                                    <div class="menu-item-name-en">Wakame Salad</div>
-                                </div>
-                                <div class="menu-item-price">₪35</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/root-vegetable-salad.png" alt="Root Vegetable Salad" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>סלט שורשים</strong>
-                                    <div class="menu-item-name-en">Root Vegetable Salad</div>
-                                </div>
-                                <div class="menu-item-price">₪39</div>
-                            </div>
-                            <div class="menu-item-tags">
-                                <span class="tag">vegan</span>
-                            </div>
-                        </div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪52</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Bao Buns -->
-            <div class="menu-category">
-                <h2>🥟 באן <span style="color: #666; font-size: 1rem;">(Bao Buns)</span></h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="images/dishes/bao-burger-2pc.png" alt="Bao Burger 2pc" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>באן בורגר – 2 יח'</strong>
-                                    <div class="menu-item-name-en">Bao Burger - 2pc</div>
-                                </div>
-                                <div class="menu-item-price">₪62</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/bao-pulled-beef-2pc.png" alt="Bao Pulled Beef 2pc" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>באן בקר מפורק – 2 יח'</strong>
-                                    <div class="menu-item-name-en">Bao Pulled Beef - 2pc</div>
-                                </div>
-                                <div class="menu-item-price">₪49</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/bao-chicken-schnitzel-2pc.png" alt="Bao Chicken Schnitzel 2pc" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>באן שניצל עוף – 2 יח'</strong>
-                                    <div class="menu-item-name-en">Bao Chicken Schnitzel - 2pc</div>
-                                </div>
-                                <div class="menu-item-price">₪42</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/bao-tofu-2pc.png" alt="Bao Tofu 2pc" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>באן טופו – 2 יח'</strong>
-                                    <div class="menu-item-name-en">Bao Tofu - 2pc</div>
-                                </div>
-                                <div class="menu-item-price">₪42</div>
-                            </div>
-                        </div>
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/wonton.png" alt="Wonton" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">וונטון</h3>
+                    <p class="dish-description">Wonton</p>
+                    <div class="dish-tags"><span class="dish-tag">🌱 טבעוני</span></div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪34</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Build Your Own Sushi -->
-            <div class="menu-category">
-                <h2>🍣 סושי בהרכבה <span style="color: #666; font-size: 1rem;">(Build Your Own Sushi)</span></h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="images/dishes/maki-vegetable.png" alt="Maki Vegetable" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>מאקי ירק</strong>
-                                    <div class="menu-item-name-en">Maki Vegetable</div>
-                                </div>
-                                <div class="menu-item-price">₪22</div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/salmon-mozzarella-triangles.png" alt="Salmon & Mozzarella Triangles" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">משולשי סלמון ומוצרלה</h3>
+                    <p class="dish-description">Salmon & Mozzarella Triangles</p>
                     
-                    <div class="menu-item">
-                        <img src="images/dishes/maki-fish.png" alt="Maki Fish" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>מאקי דג</strong>
-                                    <div class="menu-item-name-en">Maki Fish</div>
-                                </div>
-                                <div class="menu-item-price">₪25</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/futomaki-4pc.png" alt="Futomaki 4pc" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>פוטומאקי 4 יח'</strong>
-                                    <div class="menu-item-name-en">Futomaki 4pc</div>
-                                </div>
-                                <div class="menu-item-price">₪22</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/vegetable-cone.png" alt="Vegetable Cone" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קונוס ירק</strong>
-                                    <div class="menu-item-name-en">Vegetable Cone</div>
-                                </div>
-                                <div class="menu-item-price">₪26</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/fish-cone.png" alt="Fish Cone" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קונוס דג</strong>
-                                    <div class="menu-item-name-en">Fish Cone</div>
-                                </div>
-                                <div class="menu-item-price">₪33</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/salmon-nigiri.png" alt="Salmon Nigiri" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>ניגירי סלמון</strong>
-                                    <div class="menu-item-name-en">Salmon Nigiri</div>
-                                </div>
-                                <div class="menu-item-price">₪24</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/red-tuna-nigiri.png" alt="Red Tuna Nigiri" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>ניגירי טונה אדומה</strong>
-                                    <div class="menu-item-name-en">Red Tuna Nigiri</div>
-                                </div>
-                                <div class="menu-item-price">₪27</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/sea-bass-nigiri.png" alt="Sea Bass Nigiri" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>ניגירי דניס</strong>
-                                    <div class="menu-item-name-en">Sea Bass Nigiri</div>
-                                </div>
-                                <div class="menu-item-price">₪29</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/salmon-sashimi.png" alt="Salmon Sashimi" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>סשימי סלמון</strong>
-                                    <div class="menu-item-name-en">Salmon Sashimi</div>
-                                </div>
-                                <div class="menu-item-price">₪39</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/tuna-sashimi.png" alt="Tuna Sashimi" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>סשימי טונה</strong>
-                                    <div class="menu-item-name-en">Tuna Sashimi</div>
-                                </div>
-                                <div class="menu-item-price">₪42</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/sea-bass-sashimi.png" alt="Sea Bass Sashimi" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>סשימי דניס</strong>
-                                    <div class="menu-item-name-en">Sea Bass Sashimi</div>
-                                </div>
-                                <div class="menu-item-price">₪48</div>
-                            </div>
-                        </div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪46</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Special Sushi Rolls -->
-            <div class="menu-category">
-                <h2>✨ ספיישל סושי <span style="color: #666; font-size: 1rem;">(Special Sushi Rolls)</span></h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="images/dishes/crispy-hamachi-yuzu.png" alt="Crispy Hamachi Yuzu" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קריספי האמצ'י ויוזו</strong>
-                                    <div class="menu-item-name-en">Crispy Hamachi Yuzu</div>
-                                </div>
-                                <div class="menu-item-price">₪61</div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/chicken-nams.png" alt="Chicken Nams" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">נאמס עוף</h3>
+                    <p class="dish-description">Chicken Nams</p>
                     
-                    <div class="menu-item">
-                        <img src="images/dishes/hamachi-kamehameha.png" alt="Hamachi Kamehameha" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>האמצ'י כמהין</strong>
-                                    <div class="menu-item-name-en">Hamachi Kamehameha</div>
-                                </div>
-                                <div class="menu-item-price">₪59</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/japanko.png" alt="Japanko" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>ג׳פנקו</strong>
-                                    <div class="menu-item-name-en">Japanko</div>
-                                </div>
-                                <div class="menu-item-price">₪42</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/japanko-fish.png" alt="Japanko Fish" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>ג'פנקו דג</strong>
-                                    <div class="menu-item-name-en">Japanko Fish</div>
-                                </div>
-                                <div class="menu-item-price">₪49</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/black-tobiko-roll.png" alt="Black Tobiko Roll" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>בלאק טוביקו רול</strong>
-                                    <div class="menu-item-name-en">Black Tobiko Roll</div>
-                                </div>
-                                <div class="menu-item-price">₪61</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/salmon-togarashi.png" alt="Salmon Togarashi" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>סלמון טוגרשי</strong>
-                                    <div class="menu-item-name-en">Salmon Togarashi</div>
-                                </div>
-                                <div class="menu-item-price">₪59</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/white-royal.png" alt="White Royal" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>ווייט רויאל</strong>
-                                    <div class="menu-item-name-en">White Royal</div>
-                                </div>
-                                <div class="menu-item-price">₪56</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/rock-and-roll.png" alt="Rock and Roll" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>רוק אנד רול</strong>
-                                    <div class="menu-item-name-en">Rock and Roll</div>
-                                </div>
-                                <div class="menu-item-price">₪54</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/tiger-roll.png" alt="Tiger Roll" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>טייגר רול</strong>
-                                    <div class="menu-item-name-en">Tiger Roll</div>
-                                </div>
-                                <div class="menu-item-price">₪54</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/volcano-roll.png" alt="Volcano Roll" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>וולקנו רול</strong>
-                                    <div class="menu-item-name-en">Volcano Roll</div>
-                                </div>
-                                <div class="menu-item-price">₪58</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/finny-roll.png" alt="Finny Roll" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>פיני רול</strong>
-                                    <div class="menu-item-name-en">Finny Roll</div>
-                                </div>
-                                <div class="menu-item-price">₪52</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/mint-roll.png" alt="Mint Roll" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>מנטה רול</strong>
-                                    <div class="menu-item-name-en">Mint Roll</div>
-                                </div>
-                                <div class="menu-item-price">₪51</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/wall-street.png" alt="Wall Street" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>וול סטריט</strong>
-                                    <div class="menu-item-name-en">Wall Street</div>
-                                </div>
-                                <div class="menu-item-price">₪45</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/salmon-cheese-roll.png" alt="Salmon Cheese Roll" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>סלמון צ׳יז רול</strong>
-                                    <div class="menu-item-name-en">Salmon Cheese Roll</div>
-                                </div>
-                                <div class="menu-item-price">₪52</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/japanika-special.png" alt="Japanika Special" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>ספיישל ג'פניקה</strong>
-                                    <div class="menu-item-name-en">Japanika Special</div>
-                                </div>
-                                <div class="menu-item-price">₪48</div>
-                            </div>
-                        </div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪47</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Combinations -->
-            <div class="menu-category">
-                <h2>🍱 קומבינציות <span style="color: #666; font-size: 1rem;">(Combinations)</span></h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="images/dishes/vegetarian-combo.png" alt="Vegetarian Combo" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קומבינציה צמחונית</strong>
-                                    <div class="menu-item-name-en">Vegetarian Combo</div>
-                                </div>
-                                <div class="menu-item-price">₪47</div>
-                            </div>
-                            <div class="menu-item-tags">
-                                <span class="tag">vegetarian</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/vegan-combo.png" alt="Vegan Combo" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קומבינציה טבעונית</strong>
-                                    <div class="menu-item-name-en">Vegan Combo</div>
-                                </div>
-                                <div class="menu-item-price">₪47</div>
-                            </div>
-                            <div class="menu-item-tags">
-                                <span class="tag">vegan</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/tokyo-combo.png" alt="Tokyo Combo" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קומבינציית טוקיו</strong>
-                                    <div class="menu-item-name-en">Tokyo Combo</div>
-                                </div>
-                                <div class="menu-item-price">₪62</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/katana-combo.png" alt="Katana Combo" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קומבינציית קאטאנא</strong>
-                                    <div class="menu-item-name-en">Katana Combo</div>
-                                </div>
-                                <div class="menu-item-price">₪65</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/mix-combo.png" alt="Mix Combo" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קומבינציית מיקס</strong>
-                                    <div class="menu-item-name-en">Mix Combo</div>
-                                </div>
-                                <div class="menu-item-price">₪74</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/salmon-combo.png" alt="Salmon Combo" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קומבינציית סלמון</strong>
-                                    <div class="menu-item-name-en">Salmon Combo</div>
-                                </div>
-                                <div class="menu-item-price">₪74</div>
-                            </div>
-                        </div>
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/אדממה_26.png" alt="אדממה" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">אדממה</h3>
+                    <p class="dish-description">Edamame</p>
+                    <div class="dish-tags"><span class="dish-tag">🌱 טבעוני</span><span class="dish-tag">ללא גלוטן</span></div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪21</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Wok Dishes (continuing in next part due to length) -->
-            <div class="menu-category">
-                <h2>🥢 מנות ווק <span style="color: #666; font-size: 1rem;">(Wok Dishes)</span></h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="images/dishes/asian-alfredo-vegetables.png" alt="Asian Alfredo Vegetables" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>אלפרדו אסייאתי ירקות</strong>
-                                    <div class="menu-item-name-en">Asian Alfredo Vegetables</div>
-                                </div>
-                                <div class="menu-item-price">₪57</div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/edamame.png" alt="Edamame" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">ספרינג רול ירקות</h3>
+                    <p class="dish-description">Vegetable Spring Roll</p>
                     
-                    <div class="menu-item">
-                        <img src="images/dishes/asian-alfredo-tofu.png" alt="Asian Alfredo Tofu" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>אלפרדו אסייאתי טופו</strong>
-                                    <div class="menu-item-name-en">Asian Alfredo Tofu</div>
-                                </div>
-                                <div class="menu-item-price">₪61</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/asian-alfredo-chicken.png" alt="Asian Alfredo Chicken" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>אלפרדו אסייאתי עוף</strong>
-                                    <div class="menu-item-name-en">Asian Alfredo Chicken</div>
-                                </div>
-                                <div class="menu-item-price">₪67</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/asian-alfredo-beef.png" alt="Asian Alfredo Beef" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>אלפרדו אסייאתי בקר</strong>
-                                    <div class="menu-item-name-en">Asian Alfredo Beef</div>
-                                </div>
-                                <div class="menu-item-price">₪69</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/asian-alfredo-salmon.png" alt="Asian Alfredo Salmon" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>אלפרדו אסייאתי סלמון</strong>
-                                    <div class="menu-item-name-en">Asian Alfredo Salmon</div>
-                                </div>
-                                <div class="menu-item-price">₪73</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/fresh-noodles-vegetables.png" alt="Fresh Noodles Vegetables" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>פרש נודלס ירקות</strong>
-                                    <div class="menu-item-name-en">Fresh Noodles Vegetables</div>
-                                </div>
-                                <div class="menu-item-price">₪49</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/fresh-noodles-chicken.png" alt="Fresh Noodles Chicken" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>פרש נודלס עוף</strong>
-                                    <div class="menu-item-name-en">Fresh Noodles Chicken</div>
-                                </div>
-                                <div class="menu-item-price">₪54</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/fresh-noodles-beef.png" alt="Fresh Noodles Beef" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>פרש נודלס בקר</strong>
-                                    <div class="menu-item-name-en">Fresh Noodles Beef</div>
-                                </div>
-                                <div class="menu-item-price">₪61</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/special-fresh-noodles.png" alt="Special Fresh Noodles" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>ספיישל פרש נודלס</strong>
-                                    <div class="menu-item-name-en">Special Fresh Noodles</div>
-                                </div>
-                                <div class="menu-item-price">₪63</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/chiang-mai-vegetables.png" alt="Chiang Mai Vegetables" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>צ׳אנג מאי ירקות</strong>
-                                    <div class="menu-item-name-en">Chiang Mai Vegetables</div>
-                                </div>
-                                <div class="menu-item-price">₪58</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/chiang-mai-chicken.png" alt="Chiang Mai Chicken" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>צ׳אנג מאי עוף</strong>
-                                    <div class="menu-item-name-en">Chiang Mai Chicken</div>
-                                </div>
-                                <div class="menu-item-price">₪63</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/pad-thai-vegetables.png" alt="Pad Thai Vegetables" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>פאד תאי ירקות</strong>
-                                    <div class="menu-item-name-en">Pad Thai Vegetables</div>
-                                </div>
-                                <div class="menu-item-price">₪51</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/pad-thai-chicken.png" alt="Pad Thai Chicken" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>פאד תאי עוף</strong>
-                                    <div class="menu-item-name-en">Pad Thai Chicken</div>
-                                </div>
-                                <div class="menu-item-price">₪58</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/pad-thai-beef.png" alt="Pad Thai Beef" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>פאד תאי בקר</strong>
-                                    <div class="menu-item-name-en">Pad Thai Beef</div>
-                                </div>
-                                <div class="menu-item-price">₪61</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/pad-thai-salmon.png" alt="Pad Thai Salmon" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>פאד תאי סלמון</strong>
-                                    <div class="menu-item-name-en">Pad Thai Salmon</div>
-                                </div>
-                                <div class="menu-item-price">₪62</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/macau-vegetables.png" alt="Macau Vegetables" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>מקאו ירקות</strong>
-                                    <div class="menu-item-name-en">Macau Vegetables</div>
-                                </div>
-                                <div class="menu-item-price">₪54</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/macau-chicken.png" alt="Macau Chicken" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>מקאו עוף</strong>
-                                    <div class="menu-item-name-en">Macau Chicken</div>
-                                </div>
-                                <div class="menu-item-price">₪61</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/macau-salmon.png" alt="Macau Salmon" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>מקאו סלמון</strong>
-                                    <div class="menu-item-name-en">Macau Salmon</div>
-                                </div>
-                                <div class="menu-item-price">₪66</div>
-                            </div>
-                        </div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪35</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Rice & Grill -->
-            <div class="menu-category">
-                <h2>🍚 אורז וגריל <span style="color: #666; font-size: 1rem;">(Rice & Grill)</span></h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="images/dishes/massaman-curry-tofu.png" alt="Massaman Curry Tofu" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קארי מסמאן טופו</strong>
-                                    <div class="menu-item-name-en">Massaman Curry Tofu</div>
-                                </div>
-                                <div class="menu-item-price">₪54</div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/גיוזה-עוף-5_3009-1.png" alt="גיוזה עוף 5 יח'" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">גיוזה עוף 5 יח'</h3>
+                    <p class="dish-description">Chicken Gyoza 5pc</p>
                     
-                    <div class="menu-item">
-                        <img src="images/dishes/massaman-curry-chicken.png" alt="Massaman Curry Chicken" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קארי מסמאן עוף</strong>
-                                    <div class="menu-item-name-en">Massaman Curry Chicken</div>
-                                </div>
-                                <div class="menu-item-price">₪57</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/massaman-curry-sea-bass.png" alt="Massaman Curry Sea Bass" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קארי מסמאן דניס</strong>
-                                    <div class="menu-item-name-en">Massaman Curry Sea Bass</div>
-                                </div>
-                                <div class="menu-item-price">₪65</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/chili-coconut-tofu-stir-fry.png" alt="Chili Coconut Tofu Stir Fry" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>מוקפץ צ'ילי קוקוס טופו</strong>
-                                    <div class="menu-item-name-en">Chili Coconut Tofu Stir Fry</div>
-                                </div>
-                                <div class="menu-item-price">₪59</div>
-                            </div>
-                            <div class="menu-item-tags">
-                                <span class="tag">vegan</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/chili-coconut-chicken-stir-fry.png" alt="Chili Coconut Chicken Stir Fry" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>מוקפץ צ'ילי קוקוס עוף</strong>
-                                    <div class="menu-item-name-en">Chili Coconut Chicken Stir Fry</div>
-                                </div>
-                                <div class="menu-item-price">₪64</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/chili-coconut-beef-stir-fry.png" alt="Chili Coconut Beef Stir Fry" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>מוקפץ צ'ילי קוקוס בקר</strong>
-                                    <div class="menu-item-name-en">Chili Coconut Beef Stir Fry</div>
-                                </div>
-                                <div class="menu-item-price">₪67</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/sweet-and-sour.png" alt="Sweet and Sour" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>חמוץ מתוק</strong>
-                                    <div class="menu-item-name-en">Sweet and Sour</div>
-                                </div>
-                                <div class="menu-item-price">₪59</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/pad-krapow-beef.png" alt="Pad Krapow Beef" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>פאד קפאו בקר</strong>
-                                    <div class="menu-item-name-en">Pad Krapow Beef</div>
-                                </div>
-                                <div class="menu-item-price">₪62</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/fish-with-cashew.png" alt="Fish with Cashew" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>דג בקשיו</strong>
-                                    <div class="menu-item-name-en">Fish with Cashew</div>
-                                </div>
-                                <div class="menu-item-price">₪64</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/chicken-with-cashew.png" alt="Chicken with Cashew" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>עוף בקשיו</strong>
-                                    <div class="menu-item-name-en">Chicken with Cashew</div>
-                                </div>
-                                <div class="menu-item-price">₪63</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/tofu-samui.png" alt="Tofu Samui" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>טופו סאמוי</strong>
-                                    <div class="menu-item-name-en">Tofu Samui</div>
-                                </div>
-                                <div class="menu-item-price">₪57</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/chicken-samui.png" alt="Chicken Samui" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>צ׳יקן סאמוי</strong>
-                                    <div class="menu-item-name-en">Chicken Samui</div>
-                                </div>
-                                <div class="menu-item-price">₪64</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/beef-samui.png" alt="Beef Samui" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>ביף סאמוי</strong>
-                                    <div class="menu-item-name-en">Beef Samui</div>
-                                </div>
-                                <div class="menu-item-price">₪67</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/chezah-tofu.png" alt="Chezah Tofu" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>צ׳זה טופו</strong>
-                                    <div class="menu-item-name-en">Chezah Tofu</div>
-                                </div>
-                                <div class="menu-item-price">₪54</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/chezah-chicken.png" alt="Chezah Chicken" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>צ׳זה עוף</strong>
-                                    <div class="menu-item-name-en">Chezah Chicken</div>
-                                </div>
-                                <div class="menu-item-price">₪57</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/chezah-beef.png" alt="Chezah Beef" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>צ׳זה בקר</strong>
-                                    <div class="menu-item-name-en">Chezah Beef</div>
-                                </div>
-                                <div class="menu-item-price">₪66</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/grilled-salmon-fillet.png" alt="Grilled Salmon Fillet" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>פילה סלמון גריל</strong>
-                                    <div class="menu-item-name-en">Grilled Salmon Fillet</div>
-                                </div>
-                                <div class="menu-item-price">₪83</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/grilled-chicken-breast.png" alt="Grilled Chicken Breast" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>חזה עוף בגריל</strong>
-                                    <div class="menu-item-name-en">Grilled Chicken Breast</div>
-                                </div>
-                                <div class="menu-item-price">₪59</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/torikatsu.png" alt="Torikatsu" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>טוריקצ׳ו</strong>
-                                    <div class="menu-item-name-en">Torikatsu</div>
-                                </div>
-                                <div class="menu-item-price">₪57</div>
-                            </div>
-                        </div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪35</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Kids Menu -->
-            <div class="menu-category">
-                <h2>👶 ג'פניקידס <span style="color: #666; font-size: 1rem;">(Japanikids)</span></h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="images/dishes/kids-bao-burger.png" alt="Kids Bao Burger" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>באן בורגר קידס</strong>
-                                    <div class="menu-item-name-en">Kids Bao Burger</div>
-                                </div>
-                                <div class="menu-item-price">₪44</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/kids-crispy-chicken.png" alt="Kids Crispy Chicken" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קריספי צ׳יקן קידס</strong>
-                                    <div class="menu-item-name-en">Kids Crispy Chicken</div>
-                                </div>
-                                <div class="menu-item-price">₪44</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/chicken-fingers.png" alt="Chicken Fingers" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>אצבעות עוף</strong>
-                                    <div class="menu-item-name-en">Chicken Fingers</div>
-                                </div>
-                                <div class="menu-item-price">₪44</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/kids-fresh-noodles-tofu.png" alt="Kids Fresh Noodles Tofu" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>פרש נודלס קידס טופו</strong>
-                                    <div class="menu-item-name-en">Kids Fresh Noodles Tofu</div>
-                                </div>
-                                <div class="menu-item-price">₪44</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/kids-fresh-noodles-chicken.png" alt="Kids Fresh Noodles Chicken" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>פרש נודלס קידס עוף</strong>
-                                    <div class="menu-item-name-en">Kids Fresh Noodles Chicken</div>
-                                </div>
-                                <div class="menu-item-price">₪44</div>
-                            </div>
-                        </div>
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/גיוזה-בטטה-5_3013.png" alt="גיוזה בטטה 5 יח'" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">גיוזה בטטה 5 יח'</h3>
+                    <p class="dish-description">Sweet Potato Gyoza 5pc</p>
+                    <div class="dish-tags"><span class="dish-tag">🌱 טבעוני</span></div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪32</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Desserts -->
-            <div class="menu-category">
-                <h2>🍰 קינוחים <span style="color: #666; font-size: 1rem;">(Desserts)</span></h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="images/dishes/red-velvet.png" alt="Red Velvet" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קטיפה אדומה</strong>
-                                    <div class="menu-item-name-en">Red Velvet</div>
-                                </div>
-                                <div class="menu-item-price">₪31</div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/כנפיים-קטן-S-_3418-min.png" alt="כנפיים קטן" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">כנפיים קטן</h3>
+                    <p class="dish-description">Wings Small</p>
                     
-                    <div class="menu-item">
-                        <img src="images/dishes/pistachio-house.png" alt="Pistachio House" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>הבית של פיסטוק</strong>
-                                    <div class="menu-item-name-en">Pistachio House</div>
-                                </div>
-                                <div class="menu-item-price">₪31</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/praline-nutella.png" alt="Praline Nutella" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>פרלינה נוצ׳לטו</strong>
-                                    <div class="menu-item-name-en">Praline Nutella</div>
-                                </div>
-                                <div class="menu-item-price">₪31</div>
-                            </div>
-                            <div class="menu-item-tags">
-                                <span class="tag">vegan</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/blondies.png" alt="Blondies" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>בלונדיז</strong>
-                                    <div class="menu-item-name-en">Blondies</div>
-                                </div>
-                                <div class="menu-item-price">₪31</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/basque-cheesecake.png" alt="Basque Cheesecake" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>עוגת גבינה באסקית</strong>
-                                    <div class="menu-item-name-en">Basque Cheesecake</div>
-                                </div>
-                                <div class="menu-item-price">₪42</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/giant-kinder-cookie.png" alt="Giant Kinder Cookie" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קוקיז קינדר ענק</strong>
-                                    <div class="menu-item-name-en">Giant Kinder Cookie</div>
-                                </div>
-                                <div class="menu-item-price">₪42</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/rocher-ball.png" alt="Rocher Ball" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>כדור רושה</strong>
-                                    <div class="menu-item-name-en">Rocher Ball</div>
-                                </div>
-                                <div class="menu-item-price">₪37</div>
-                            </div>
-                            <div class="menu-item-tags">
-                                <span class="tag">vegan</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/sweet-like-chocolate.png" alt="Sweet Like Chocolate" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>סוויט לייק צ׳וקלט</strong>
-                                    <div class="menu-item-name-en">Sweet Like Chocolate</div>
-                                </div>
-                                <div class="menu-item-price">₪41</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/crack-pie.png" alt="Crack Pie" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>קראק פאי</strong>
-                                    <div class="menu-item-name-en">Crack Pie</div>
-                                </div>
-                                <div class="menu-item-price">₪41</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <img src="images/dishes/cr-me-br-l-e.png" alt="Crème Brûlée" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>ברולה</strong>
-                                    <div class="menu-item-name-en">Crème Brûlée</div>
-                                </div>
-                                <div class="menu-item-price">₪38</div>
-                            </div>
-                        </div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪29</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Party Trays -->
-            <div class="menu-category">
-                <h2>🎉 מגשי מסיבה <span style="color: #666; font-size: 1rem;">(Party Trays)</span></h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="images/dishes/large-party-platter.png" alt="Large Party Platter" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>מגש מסיבה גדול</strong>
-                                    <div class="menu-item-name-en">Large Party Platter</div>
-                                </div>
-                                <div class="menu-item-price">₪370</div>
-                            </div>
-                            <p style="color: #666; font-size: 0.9rem; margin-top: 0.5rem;">80 יחידות - 10 רולים</p>
-                        </div>
-                    </div>
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/כנפיים-גדול-L_3419-min.png" alt="כנפיים גדול" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">כנפיים גדול</h3>
+                    <p class="dish-description">Wings Large</p>
                     
-                    <div class="menu-item">
-                        <img src="images/dishes/small-party-platter.png" alt="Small Party Platter" class="menu-item-image">
-                        <div class="menu-item-content">
-                            <div class="menu-item-header">
-                                <div class="menu-item-name">
-                                    <strong>מגש מסיבה קטן</strong>
-                                    <div class="menu-item-name-en">Small Party Platter</div>
-                                </div>
-                                <div class="menu-item-price">₪299</div>
-                            </div>
-                            <p style="color: #666; font-size: 0.9rem; margin-top: 0.5rem;">64 יחידות - 8 רולים</p>
-                        </div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪41</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/קריספי-בטטה_3702.png" alt="קריספי בטטה" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קריספי בטטה</h3>
+                    <p class="dish-description">Crispy Sweet Potato</p>
+                    <div class="dish-tags"><span class="dish-tag">🌱 טבעוני</span></div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪27</span>
                     </div>
                 </div>
             </div>
 
         </div>
+    </div>
+
+    <div class="menu-category" id="soups">
+        <div class="category-header fade-in-scroll">
+            <h2 class="category-title">מרקים</h2>
+            <p class="category-subtitle">Soups</p>
+        </div>
+        <div class="dishes-grid">
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/מרק-טום-יאם-ירקות1.png" alt="טום יאם תאילנדי ירקות" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">טום יאם תאילנדי ירקות</h3>
+                    <p class="dish-description">Tom Yum Thai Vegetables</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪31</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/טום-יאם_3408_3409.png" alt="טום יאם תאילנדי עוף" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">טום יאם תאילנדי עוף</h3>
+                    <p class="dish-description">Tom Yum Thai Chicken</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪46</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/מיסו_511.png" alt="מרק מיסו" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">מרק מיסו</h3>
+                    <p class="dish-description">Miso Soup</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪21</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/vegetable-spring-roll.png" alt="Vegetable Spring Roll" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">מרק בטטה וג׳ינג׳ר</h3>
+                    <p class="dish-description">Sweet Potato & Ginger Soup</p>
+                    <div class="dish-tags"><span class="dish-tag">🌱 טבעוני</span></div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪36</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu-category" id="salads">
+        <div class="category-header fade-in-scroll">
+            <h2 class="category-title">סלטים</h2>
+            <p class="category-subtitle">Salads</p>
+        </div>
+        <div class="dishes-grid">
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/chicken-gyoza-5pc.png" alt="Chicken Gyoza 5pc" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">סלט תפוחים קריספי</h3>
+                    <p class="dish-description">Crispy Apple Salad</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪42</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/sweet-potato-gyoza-5pc.png" alt="Sweet Potato Gyoza 5pc" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">ספייסי צ׳יקן סלט</h3>
+                    <p class="dish-description">Spicy Chicken Salad</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪49</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/wings-small.png" alt="Wings Small" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">סלט וואקמה</h3>
+                    <p class="dish-description">Wakame Salad</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪35</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/wings-large.png" alt="Wings Large" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">סלט שורשים</h3>
+                    <p class="dish-description">Root Vegetable Salad</p>
+                    <div class="dish-tags"><span class="dish-tag">🌱 טבעוני</span></div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪39</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu-category" id="bao">
+        <div class="category-header fade-in-scroll">
+            <h2 class="category-title">באן</h2>
+            <p class="category-subtitle">Bao Buns</p>
+        </div>
+        <div class="dishes-grid">
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/באן-בורגר-עיקרית.png" alt="באן בורגר – 2 יח'" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">באן בורגר – 2 יח'</h3>
+                    <p class="dish-description">Bao Burger - 2pc</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪62</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/באן-בקר-מפורק_.png" alt="באן בקר מפורק – 2 יח'" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">באן בקר מפורק – 2 יח'</h3>
+                    <p class="dish-description">Bao Pulled Beef - 2pc</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪49</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/באן-שניצל_.png" alt="באן שניצל עוף – 2 יח'" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">באן שניצל עוף – 2 יח'</h3>
+                    <p class="dish-description">Bao Chicken Schnitzel - 2pc</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪42</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/באן-טופו_.png" alt="באן טופו – 2 יח'" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">באן טופו – 2 יח'</h3>
+                    <p class="dish-description">Bao Tofu - 2pc</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪42</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu-category" id="sushi-custom">
+        <div class="category-header fade-in-scroll">
+            <h2 class="category-title">סושי בהרכבה</h2>
+            <p class="category-subtitle">Build Your Own Sushi</p>
+        </div>
+        <div class="dishes-grid">
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/מאקי-ירק-IO.jpg" alt="מאקי ירק" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">מאקי ירק</h3>
+                    <p class="dish-description">Maki Vegetable</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪22</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/מאקי-דג-6-יח-אינסייד-אאוט.png" alt="מאקי דג" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">מאקי דג</h3>
+                    <p class="dish-description">Maki Fish</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪25</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/פוטומאקי-4-יח-IO.jpg" alt="פוטומאקי 4 יח'" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">פוטומאקי 4 יח'</h3>
+                    <p class="dish-description">Futomaki 4pc</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪22</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/crispy-sweet-potato.png" alt="Crispy Sweet Potato" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קונוס ירק</h3>
+                    <p class="dish-description">Vegetable Cone</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪26</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/tom-yum-thai-vegetables.png" alt="Tom Yum Thai Vegetables" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קונוס דג</h3>
+                    <p class="dish-description">Fish Cone</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪33</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/tom-yum-thai-chicken.png" alt="Tom Yum Thai Chicken" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">ניגירי סלמון</h3>
+                    <p class="dish-description">Salmon Nigiri</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪24</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/ניגירי-טונה.png" alt="ניגירי טונה אדומה" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">ניגירי טונה אדומה</h3>
+                    <p class="dish-description">Red Tuna Nigiri</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪27</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/ניגירי-דניס.png" alt="ניגירי דניס" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">ניגירי דניס</h3>
+                    <p class="dish-description">Sea Bass Nigiri</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪29</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/miso-soup.png" alt="Miso Soup" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">סשימי סלמון</h3>
+                    <p class="dish-description">Salmon Sashimi</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪39</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/sweet-potato-ginger-soup.png" alt="Sweet Potato & Ginger Soup" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">סשימי טונה</h3>
+                    <p class="dish-description">Tuna Sashimi</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪42</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/crispy-apple-salad.png" alt="Crispy Apple Salad" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">סשימי דניס</h3>
+                    <p class="dish-description">Sea Bass Sashimi</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪48</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu-category" id="special-sushi">
+        <div class="category-header fade-in-scroll">
+            <h2 class="category-title">ספיישל סושי</h2>
+            <p class="category-subtitle">Special Sushi Rolls</p>
+        </div>
+        <div class="dishes-grid">
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/spicy-chicken-salad.png" alt="Spicy Chicken Salad" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קריספי האמצ'י ויוזו</h3>
+                    <p class="dish-description">Crispy Hamachi Yuzu</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪61</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/wakame-salad.png" alt="Wakame Salad" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">האמצ'י כמהין</h3>
+                    <p class="dish-description">Hamachi Kamehameha</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪59</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/root-vegetable-salad.png" alt="Root Vegetable Salad" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">ג׳פנקו</h3>
+                    <p class="dish-description">Japanko</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪42</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/bao-burger-2pc.png" alt="Bao Burger - 2pc" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">ג'פנקו דג</h3>
+                    <p class="dish-description">Japanko Fish</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪49</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/bao-pulled-beef-2pc.png" alt="Bao Pulled Beef - 2pc" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">בלאק טוביקו רול</h3>
+                    <p class="dish-description">Black Tobiko Roll</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪61</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/bao-chicken-schnitzel-2pc.png" alt="Bao Chicken Schnitzel - 2pc" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">סלמון טוגרשי</h3>
+                    <p class="dish-description">Salmon Togarashi</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪59</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/bao-tofu-2pc.png" alt="Bao Tofu - 2pc" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">ווייט רויאל</h3>
+                    <p class="dish-description">White Royal</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪56</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/maki-vegetable.png" alt="Maki Vegetable" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">רוק אנד רול</h3>
+                    <p class="dish-description">Rock and Roll</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪54</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/טייגר-רול_-min.png" alt="טייגר רול" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">טייגר רול</h3>
+                    <p class="dish-description">Tiger Roll</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪54</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/וולקנו-רול-min.png" alt="וולקנו רול" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">וולקנו רול</h3>
+                    <p class="dish-description">Volcano Roll</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪58</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/maki-fish.png" alt="Maki Fish" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">פיני רול</h3>
+                    <p class="dish-description">Finny Roll</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪52</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/מנטה-רול_3628-min.png" alt="מנטה רול" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">מנטה רול</h3>
+                    <p class="dish-description">Mint Roll</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪51</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/וול-סטריט_3602-min.png" alt="וול סטריט" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">וול סטריט</h3>
+                    <p class="dish-description">Wall Street</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪45</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/futomaki-4pc.png" alt="Futomaki 4pc" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">סלמון צ׳יז רול</h3>
+                    <p class="dish-description">Salmon Cheese Roll</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪52</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/vegetable-cone.png" alt="Vegetable Cone" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">ספיישל ג'פניקה</h3>
+                    <p class="dish-description">Japanika Special</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪48</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu-category" id="combinations">
+        <div class="category-header fade-in-scroll">
+            <h2 class="category-title">קומבינציות</h2>
+            <p class="category-subtitle">Combinations</p>
+        </div>
+        <div class="dishes-grid">
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/צמחונית_1431-min.png" alt="קומבינציה צמחונית" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קומבינציה צמחונית</h3>
+                    <p class="dish-description">Vegetarian Combo</p>
+                    <div class="dish-tags"><span class="dish-tag">🥗 צמחוני</span></div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪47</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/טבעונית_3699-min.png" alt="קומבינציה טבעונית" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קומבינציה טבעונית</h3>
+                    <p class="dish-description">Vegan Combo</p>
+                    <div class="dish-tags"><span class="dish-tag">🌱 טבעוני</span></div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪47</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/טוקיו_1430-min.png" alt="קומבינציית טוקיו" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קומבינציית טוקיו</h3>
+                    <p class="dish-description">Tokyo Combo</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪62</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/קאטאנה.png" alt="קומבינציית קאטאנא" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קומבינציית קאטאנא</h3>
+                    <p class="dish-description">Katana Combo</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪65</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/מיקס_1433-min.png" alt="קומבינציית מיקס" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קומבינציית מיקס</h3>
+                    <p class="dish-description">Mix Combo</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪74</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/fish-cone.png" alt="Fish Cone" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קומבינציית סלמון</h3>
+                    <p class="dish-description">Salmon Combo</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪74</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu-category" id="wok">
+        <div class="category-header fade-in-scroll">
+            <h2 class="category-title">מנות ווק</h2>
+            <p class="category-subtitle">Wok Dishes</p>
+        </div>
+        <div class="dishes-grid">
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/salmon-nigiri.png" alt="Salmon Nigiri" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">אלפרדו אסייאתי ירקות</h3>
+                    <p class="dish-description">Asian Alfredo Vegetables</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪57</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/red-tuna-nigiri.png" alt="Red Tuna Nigiri" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">אלפרדו אסייאתי טופו</h3>
+                    <p class="dish-description">Asian Alfredo Tofu</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪61</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/sea-bass-nigiri.png" alt="Sea Bass Nigiri" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">אלפרדו אסייאתי עוף</h3>
+                    <p class="dish-description">Asian Alfredo Chicken</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪67</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/salmon-sashimi.png" alt="Salmon Sashimi" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">אלפרדו אסייאתי בקר</h3>
+                    <p class="dish-description">Asian Alfredo Beef</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪69</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/tuna-sashimi.png" alt="Tuna Sashimi" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">אלפרדו אסייאתי סלמון</h3>
+                    <p class="dish-description">Asian Alfredo Salmon</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪73</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/sea-bass-sashimi.png" alt="Sea Bass Sashimi" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">פרש נודלס ירקות</h3>
+                    <p class="dish-description">Fresh Noodles Vegetables</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪49</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/crispy-hamachi-yuzu.png" alt="Crispy Hamachi Yuzu" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">פרש נודלס עוף</h3>
+                    <p class="dish-description">Fresh Noodles Chicken</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪54</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/hamachi-kamehameha.png" alt="Hamachi Kamehameha" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">פרש נודלס בקר</h3>
+                    <p class="dish-description">Fresh Noodles Beef</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪61</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/japanko.png" alt="Japanko" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">ספיישל פרש נודלס</h3>
+                    <p class="dish-description">Special Fresh Noodles</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪63</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/japanko-fish.png" alt="Japanko Fish" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">צ׳אנג מאי ירקות</h3>
+                    <p class="dish-description">Chiang Mai Vegetables</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪58</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/black-tobiko-roll.png" alt="Black Tobiko Roll" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">צ׳אנג מאי עוף</h3>
+                    <p class="dish-description">Chiang Mai Chicken</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪63</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/salmon-togarashi.png" alt="Salmon Togarashi" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">פאד תאי ירקות</h3>
+                    <p class="dish-description">Pad Thai Vegetables</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪51</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/white-royal.png" alt="White Royal" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">פאד תאי עוף</h3>
+                    <p class="dish-description">Pad Thai Chicken</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪58</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/rock-and-roll.png" alt="Rock and Roll" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">פאד תאי בקר</h3>
+                    <p class="dish-description">Pad Thai Beef</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪61</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/פאד-תאי-סלמון.png" alt="פאד תאי סלמון" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">פאד תאי סלמון</h3>
+                    <p class="dish-description">Pad Thai Salmon</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪62</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/מקאו-ירקות_3545-min.png" alt="מקאו ירקות" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">מקאו ירקות</h3>
+                    <p class="dish-description">Macau Vegetables</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪54</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/מקאו-עוף_3547-min.png" alt="מקאו עוף" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">מקאו עוף</h3>
+                    <p class="dish-description">Macau Chicken</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪61</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/מקאו-סלמון_3549-min.png" alt="מקאו סלמון" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">מקאו סלמון</h3>
+                    <p class="dish-description">Macau Salmon</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪66</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu-category" id="rice-grill">
+        <div class="category-header fade-in-scroll">
+            <h2 class="category-title">אורז וגריל</h2>
+            <p class="category-subtitle">Rice & Grill</p>
+        </div>
+        <div class="dishes-grid">
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/tiger-roll.png" alt="Tiger Roll" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קארי מסמאן טופו</h3>
+                    <p class="dish-description">Massaman Curry Tofu</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪54</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/volcano-roll.png" alt="Volcano Roll" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קארי מסמאן עוף</h3>
+                    <p class="dish-description">Massaman Curry Chicken</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪57</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/finny-roll.png" alt="Finny Roll" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קארי מסמאן דניס</h3>
+                    <p class="dish-description">Massaman Curry Sea Bass</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪65</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/mint-roll.png" alt="Mint Roll" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">מוקפץ צ'ילי קוקוס טופו</h3>
+                    <p class="dish-description">Chili Coconut Tofu Stir Fry</p>
+                    <div class="dish-tags"><span class="dish-tag">🌱 טבעוני</span></div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪59</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/wall-street.png" alt="Wall Street" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">מוקפץ צ'ילי קוקוס עוף</h3>
+                    <p class="dish-description">Chili Coconut Chicken Stir Fry</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪64</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/salmon-cheese-roll.png" alt="Salmon Cheese Roll" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">מוקפץ צ'ילי קוקוס בקר</h3>
+                    <p class="dish-description">Chili Coconut Beef Stir Fry</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪67</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/חמוץ-מתוק_3100.png" alt="חמוץ מתוק" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">חמוץ מתוק</h3>
+                    <p class="dish-description">Sweet and Sour</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪59</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/japanika-special.png" alt="Japanika Special" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">פאד קפאו בקר</h3>
+                    <p class="dish-description">Pad Krapow Beef</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪62</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/דג-בקשיו_3121.png" alt="דג בקשיו" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">דג בקשיו</h3>
+                    <p class="dish-description">Fish with Cashew</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪64</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/vegetarian-combo.png" alt="Vegetarian Combo" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">עוף בקשיו</h3>
+                    <p class="dish-description">Chicken with Cashew</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪63</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/טופו-סאמוי_3118.png" alt="טופו סאמוי" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">טופו סאמוי</h3>
+                    <p class="dish-description">Tofu Samui</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪57</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/vegan-combo.png" alt="Vegan Combo" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">צ׳יקן סאמוי</h3>
+                    <p class="dish-description">Chicken Samui</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪64</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/tokyo-combo.png" alt="Tokyo Combo" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">ביף סאמוי</h3>
+                    <p class="dish-description">Beef Samui</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪67</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/katana-combo.png" alt="Katana Combo" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">צ׳זה טופו</h3>
+                    <p class="dish-description">Chezah Tofu</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪54</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/mix-combo.png" alt="Mix Combo" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">צ׳זה עוף</h3>
+                    <p class="dish-description">Chezah Chicken</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪57</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/salmon-combo.png" alt="Salmon Combo" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">צ׳זה בקר</h3>
+                    <p class="dish-description">Chezah Beef</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪66</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/asian-alfredo-vegetables.png" alt="Asian Alfredo Vegetables" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">פילה סלמון גריל</h3>
+                    <p class="dish-description">Grilled Salmon Fillet</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪83</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/חזה-עוף-בגריל_1412.png" alt="חזה עוף בגריל" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">חזה עוף בגריל</h3>
+                    <p class="dish-description">Grilled Chicken Breast</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪59</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/asian-alfredo-tofu.png" alt="Asian Alfredo Tofu" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">טוריקצ׳ו</h3>
+                    <p class="dish-description">Torikatsu</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪57</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu-category" id="kids">
+        <div class="category-header fade-in-scroll">
+            <h2 class="category-title">ג'פניקידס</h2>
+            <p class="category-subtitle">Japanikids</p>
+        </div>
+        <div class="dishes-grid">
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/באן-בורגר-קידס.png" alt="באן בורגר קידס" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">באן בורגר קידס</h3>
+                    <p class="dish-description">Kids Bao Burger</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪44</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/asian-alfredo-chicken.png" alt="Asian Alfredo Chicken" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קריספי צ׳יקן קידס</h3>
+                    <p class="dish-description">Kids Crispy Chicken</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪44</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/אצבעות-עוף-א.ילדים_1437-scaled.jpg" alt="אצבעות עוף" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">אצבעות עוף</h3>
+                    <p class="dish-description">Chicken Fingers</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪44</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/פרש-קידס-טופו.png" alt="פרש נודלס קידס טופו" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">פרש נודלס קידס טופו</h3>
+                    <p class="dish-description">Kids Fresh Noodles Tofu</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪44</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/פרש-קידס.jpg" alt="פרש נודלס קידס עוף" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">פרש נודלס קידס עוף</h3>
+                    <p class="dish-description">Kids Fresh Noodles Chicken</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪44</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu-category" id="desserts">
+        <div class="category-header fade-in-scroll">
+            <h2 class="category-title">קינוחים</h2>
+            <p class="category-subtitle">Desserts</p>
+        </div>
+        <div class="dishes-grid">
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/asian-alfredo-beef.png" alt="Asian Alfredo Beef" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קטיפה אדומה</h3>
+                    <p class="dish-description">Red Velvet</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪31</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/asian-alfredo-salmon.png" alt="Asian Alfredo Salmon" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">הבית של פיסטוק</h3>
+                    <p class="dish-description">Pistachio House</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪31</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/fresh-noodles-vegetables.png" alt="Fresh Noodles Vegetables" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">פרלינה נוצ׳לטו</h3>
+                    <p class="dish-description">Praline Nutella</p>
+                    <div class="dish-tags"><span class="dish-tag">🌱 טבעוני</span></div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪31</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/fresh-noodles-chicken.png" alt="Fresh Noodles Chicken" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">בלונדיז</h3>
+                    <p class="dish-description">Blondies</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪31</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/fresh-noodles-beef.png" alt="Fresh Noodles Beef" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">עוגת גבינה באסקית</h3>
+                    <p class="dish-description">Basque Cheesecake</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪42</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/special-fresh-noodles.png" alt="Special Fresh Noodles" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קוקיז קינדר ענק</h3>
+                    <p class="dish-description">Giant Kinder Cookie</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪42</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/כדור-רושה.png" alt="כדור רושה" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">כדור רושה</h3>
+                    <p class="dish-description">Rocher Ball</p>
+                    <div class="dish-tags"><span class="dish-tag">🌱 טבעוני</span></div>
+                    <div class="dish-footer">
+                        <span class="dish-price">₪37</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/chiang-mai-vegetables.png" alt="Chiang Mai Vegetables" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">סוויט לייק צ׳וקלט</h3>
+                    <p class="dish-description">Sweet Like Chocolate</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪41</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/chiang-mai-chicken.png" alt="Chiang Mai Chicken" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">קראק פאי</h3>
+                    <p class="dish-description">Crack Pie</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪41</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/ברולה.png" alt="ברולה" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">ברולה</h3>
+                    <p class="dish-description">Crème Brûlée</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪38</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu-category" id="party-trays">
+        <div class="category-header fade-in-scroll">
+            <h2 class="category-title">מגשי מסיבה</h2>
+            <p class="category-subtitle">Party Trays</p>
+        </div>
+        <div class="dishes-grid">
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="https://kingofthemountain-bot.github.io/japanika-ai/images/pad-thai-vegetables.png" alt="Pad Thai Vegetables" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">מגש מסיבה גדול</h3>
+                    <p class="dish-description">80 יחידות - 10 רולים</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪370</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish-card fade-in-scroll">
+                <div class="dish-image-wrapper">
+                    <img src="images/dishes/מגש1.png" alt="מגש מסיבה קטן" class="dish-image" loading="lazy">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">מגש מסיבה קטן</h3>
+                    <p class="dish-description">64 יחידות - 8 רולים</p>
+                    
+                    <div class="dish-footer">
+                        <span class="dish-price">₪299</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>            </div>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div style="text-align: center; padding: 2rem 0;">
-                <p>&copy; 2026 Japanika.AI - First AI-Native Restaurant Platform | Built with ❤️ by JONI AI</p>
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="footer-title">ג'פניקה</h3>
+                    <p class="footer-text">רשת המסעדות האסייתיות המובילה בישראל</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">קישורים</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">בית</a></li>
+                        <li><a href="menu-static.html">תפריט</a></li>
+                        <li><a href="about.html">אודות</a></li>
+                        <li><a href="branches.html">סניפים</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">צרו קשר</h4>
+                    <ul class="footer-links">
+                        <li>43 סניפים ברחבי הארץ</li>
+                        <li><a href="https://www.japanika.net/" target="_blank">www.japanika.net</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ג'פניקה. כל הזכויות שמורות.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Only load main.js for navigation, NOT menu.js -->
+    <script src="js/main.js"></script>
 </body>
 </html>

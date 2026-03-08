@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanika V2 - Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .preview-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 1200px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .preview-header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .preview-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 900;
+        }
+
+        .preview-header p {
+            font-size: 1.25rem;
+            opacity: 0.8;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #D32F2F;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+
+        .preview-content {
+            padding: 3rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            background: #f5f5f5;
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature p {
+            color: #757575;
+            line-height: 1.6;
+        }
+
+        .tech-stack {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            color: white;
+        }
+
+        .tech-stack h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-badges {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tech-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #1a1a1a;
+            border-radius: 16px;
+            color: white;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #D32F2F;
+            color: white;
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-top: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(211, 47, 47, 0.4);
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .stat {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #D32F2F;
+            display: block;
+        }
+
+        .stat-label {
+            color: #757575;
+            margin-top: 0.5rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-container">
+        <div class="preview-header">
+            <h1>🍣 Japanika V2</h1>
+            <p>אתר מקצועי ברמה בינלאומית</p>
+            <span class="badge">✨ Premium Design</span>
+        </div>
+
+        <div class="preview-content">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem;">תכונות עיקריות</h2>
+            
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">🎨</div>
+                    <h3>עיצוב מינימליסטי</h3>
+                    <p>בהשראת Nobu, Zuma ומותגים מובילים</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <h3>Responsive מלא</h3>
+                    <p>מושלם על כל מכשיר - מובייל, טאבלט, דסקטופ</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>ביצועים מעולים</h3>
+                    <p>טעינה מהירה, אנימציות חלקות</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🖼️</div>
+                    <h3>תמונות מרשימות</h3>
+                    <p>תמונות גדולות ואיכותיות עם hover effects</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">✨</div>
+                    <h3>אנימציות עדינות</h3>
+                    <p>Fade-in, parallax, tilt effects</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">♿</div>
+                    <h3>נגיש לכולם</h3>
+                    <p>תמיכה ב-WCAG, keyboard navigation</p>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <h2>🚀 סטאק טכנולוגי</h2>
+                <div class="tech-badges">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3 Grid & Flexbox</span>
+                    <span class="tech-badge">Vanilla JavaScript</span>
+                    <span class="tech-badge">Intersection Observer</span>
+                    <span class="tech-badge">Google Fonts</span>
+                    <span class="tech-badge">No Dependencies</span>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Responsive</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">&lt;1s</span>
+                    <span class="stat-label">זמן טעינה</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">0</span>
+                    <span class="stat-label">Dependencies</span>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2 style="margin-bottom: 1rem;">האתר מוכן!</h2>
+                <p>לחץ על הכפתור למטה לצפייה באתר המלא</p>
+                <a href="index.html" class="cta-button">צפה באתר →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

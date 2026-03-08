@@ -1,0 +1,106 @@
+{
+  "batchNumber": 4,
+  "timestamp": "2026-03-08T08:05:17.157Z",
+  "dishes": [
+    {
+      "name": "אלפרדו אסייאתי סלמון",
+      "nameEn": "Asian Alfredo Salmon",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/asian-alfredo-salmon.png"
+    },
+    {
+      "name": "פרש נודלס ירקות",
+      "nameEn": "Fresh Noodles Vegetables",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/fresh-noodles-vegetables.png"
+    },
+    {
+      "name": "פרש נודלס עוף",
+      "nameEn": "Fresh Noodles Chicken",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/fresh-noodles-chicken.png"
+    },
+    {
+      "name": "פרש נודלס בקר",
+      "nameEn": "Fresh Noodles Beef",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/fresh-noodles-beef.png"
+    },
+    {
+      "name": "ספיישל פרש נודלס",
+      "nameEn": "Special Fresh Noodles",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/special-fresh-noodles.png"
+    },
+    {
+      "name": "צ׳אנג מאי ירקות",
+      "nameEn": "Chiang Mai Vegetables",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/chiang-mai-vegetables.png"
+    },
+    {
+      "name": "צ׳אנג מאי עוף",
+      "nameEn": "Chiang Mai Chicken",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/chiang-mai-chicken.png"
+    },
+    {
+      "name": "פאד תאי ירקות",
+      "nameEn": "Pad Thai Vegetables",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/pad-thai-vegetables.png"
+    },
+    {
+      "name": "פאד תאי עוף",
+      "nameEn": "Pad Thai Chicken",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/pad-thai-chicken.png"
+    },
+    {
+      "name": "פאד תאי בקר",
+      "nameEn": "Pad Thai Beef",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/pad-thai-beef.png"
+    },
+    {
+      "name": "פאד תאי סלמון",
+      "nameEn": "Pad Thai Salmon",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/pad-thai-salmon.png"
+    },
+    {
+      "name": "מקאו ירקות",
+      "nameEn": "Macau Vegetables",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/macau-vegetables.png"
+    },
+    {
+      "name": "מקאו עוף",
+      "nameEn": "Macau Chicken",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/macau-chicken.png"
+    },
+    {
+      "name": "מקאו סלמון",
+      "nameEn": "Macau Salmon",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/macau-salmon.png"
+    },
+    {
+      "name": "קארי מסמאן טופו",
+      "nameEn": "Massaman Curry Tofu",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/massaman-curry-tofu.png"
+    },
+    {
+      "name": "קארי מסמאן עוף",
+      "nameEn": "Massaman Curry Chicken",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/massaman-curry-chicken.png"
+    },
+    {
+      "name": "קארי מסמאן דניס",
+      "nameEn": "Massaman Curry Sea Bass",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/massaman-curry-sea-bass.png"
+    },
+    {
+      "name": "מוקפץ צ'ילי קוקוס טופו",
+      "nameEn": "Chili Coconut Tofu Stir Fry",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/chili-coconut-tofu-stir-fry.png"
+    },
+    {
+      "name": "מוקפץ צ'ילי קוקוס עוף",
+      "nameEn": "Chili Coconut Chicken Stir Fry",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/chili-coconut-chicken-stir-fry.png"
+    },
+    {
+      "name": "מוקפץ צ'ילי קוקוס בקר",
+      "nameEn": "Chili Coconut Beef Stir Fry",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/chili-coconut-beef-stir-fry.png"
+    }
+  ]
+}

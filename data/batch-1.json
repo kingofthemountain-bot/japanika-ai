@@ -1,0 +1,106 @@
+{
+  "batchNumber": 1,
+  "timestamp": "2026-03-08T07:58:22.890Z",
+  "dishes": [
+    {
+      "name": "קריספי רייס ספייסי סלמון",
+      "nameEn": "Crispy Rice Spicy Salmon",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/crispy-rice-spicy-salmon.png"
+    },
+    {
+      "name": "קריספי רייס ספייסי דניס",
+      "nameEn": "Crispy Rice Spicy Sea Bass",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/crispy-rice-spicy-sea-bass.png"
+    },
+    {
+      "name": "קריספי רייס ספייסי טונה",
+      "nameEn": "Crispy Rice Spicy Tuna",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/crispy-rice-spicy-tuna.png"
+    },
+    {
+      "name": "וונטון",
+      "nameEn": "Wonton",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/wonton.png"
+    },
+    {
+      "name": "משולשי סלמון ומוצרלה",
+      "nameEn": "Salmon & Mozzarella Triangles",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/salmon--mozzarella-triangles.png"
+    },
+    {
+      "name": "נאמס עוף",
+      "nameEn": "Chicken Nams",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/chicken-nams.png"
+    },
+    {
+      "name": "אדממה",
+      "nameEn": "Edamame",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/edamame.png"
+    },
+    {
+      "name": "ספרינג רול ירקות",
+      "nameEn": "Vegetable Spring Roll",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/vegetable-spring-roll.png"
+    },
+    {
+      "name": "גיוזה עוף 5 יח'",
+      "nameEn": "Chicken Gyoza 5pc",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/chicken-gyoza-5pc.png"
+    },
+    {
+      "name": "גיוזה בטטה 5 יח'",
+      "nameEn": "Sweet Potato Gyoza 5pc",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/sweet-potato-gyoza-5pc.png"
+    },
+    {
+      "name": "כנפיים קטן",
+      "nameEn": "Wings Small",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/wings-small.png"
+    },
+    {
+      "name": "כנפיים גדול",
+      "nameEn": "Wings Large",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/wings-large.png"
+    },
+    {
+      "name": "קריספי בטטה",
+      "nameEn": "Crispy Sweet Potato",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/crispy-sweet-potato.png"
+    },
+    {
+      "name": "טום יאם תאילנדי ירקות",
+      "nameEn": "Tom Yum Thai Vegetables",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/tom-yum-thai-vegetables.png"
+    },
+    {
+      "name": "טום יאם תאילנדי עוף",
+      "nameEn": "Tom Yum Thai Chicken",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/tom-yum-thai-chicken.png"
+    },
+    {
+      "name": "מרק מיסו",
+      "nameEn": "Miso Soup",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/miso-soup.png"
+    },
+    {
+      "name": "מרק בטטה וג׳ינג׳ר",
+      "nameEn": "Sweet Potato & Ginger Soup",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/sweet-potato--ginger-soup.png"
+    },
+    {
+      "name": "ספייסי צ׳יקן סלט",
+      "nameEn": "Spicy Chicken Salad",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/spicy-chicken-salad.png"
+    },
+    {
+      "name": "סלט וואקמה",
+      "nameEn": "Wakame Salad",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/wakame-salad.png"
+    },
+    {
+      "name": "סלט שורשים",
+      "nameEn": "Root Vegetable Salad",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/root-vegetable-salad.png"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "batchNumber": 2,
+  "timestamp": "2026-03-08T08:00:36.543Z",
+  "dishes": [
+    {
+      "name": "באן בורגר – 2 יח'",
+      "nameEn": "Bao Burger - 2pc",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/bao-burger---2pc.png"
+    },
+    {
+      "name": "באן בקר מפורק – 2 יח'",
+      "nameEn": "Bao Pulled Beef - 2pc",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/bao-pulled-beef---2pc.png"
+    },
+    {
+      "name": "באן שניצל עוף – 2 יח'",
+      "nameEn": "Bao Chicken Schnitzel - 2pc",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/bao-chicken-schnitzel---2pc.png"
+    },
+    {
+      "name": "באן טופו – 2 יח'",
+      "nameEn": "Bao Tofu - 2pc",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/bao-tofu---2pc.png"
+    },
+    {
+      "name": "מאקי ירק",
+      "nameEn": "Maki Vegetable",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/maki-vegetable.png"
+    },
+    {
+      "name": "מאקי דג",
+      "nameEn": "Maki Fish",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/maki-fish.png"
+    },
+    {
+      "name": "פוטומאקי 4 יח'",
+      "nameEn": "Futomaki 4pc",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/futomaki-4pc.png"
+    },
+    {
+      "name": "קונוס ירק",
+      "nameEn": "Vegetable Cone",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/vegetable-cone.png"
+    },
+    {
+      "name": "קונוס דג",
+      "nameEn": "Fish Cone",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/fish-cone.png"
+    },
+    {
+      "name": "ניגירי סלמון",
+      "nameEn": "Salmon Nigiri",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/salmon-nigiri.png"
+    },
+    {
+      "name": "ניגירי טונה אדומה",
+      "nameEn": "Red Tuna Nigiri",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/red-tuna-nigiri.png"
+    },
+    {
+      "name": "ניגירי דניס",
+      "nameEn": "Sea Bass Nigiri",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/sea-bass-nigiri.png"
+    },
+    {
+      "name": "סשימי סלמון",
+      "nameEn": "Salmon Sashimi",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/salmon-sashimi.png"
+    },
+    {
+      "name": "סשימי טונה",
+      "nameEn": "Tuna Sashimi",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/tuna-sashimi.png"
+    },
+    {
+      "name": "סשימי דניס",
+      "nameEn": "Sea Bass Sashimi",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/sea-bass-sashimi.png"
+    },
+    {
+      "name": "קריספי האמצ'י ויוזו",
+      "nameEn": "Crispy Hamachi Yuzu",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/crispy-hamachi-yuzu.png"
+    },
+    {
+      "name": "האמצ'י כמהין",
+      "nameEn": "Hamachi Kamehameha",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/hamachi-kamehameha.png"
+    },
+    {
+      "name": "ג׳פנקו",
+      "nameEn": "Japanko",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/japanko.png"
+    },
+    {
+      "name": "ג'פנקו דג",
+      "nameEn": "Japanko Fish",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/japanko-fish.png"
+    },
+    {
+      "name": "בלאק טוביקו רול",
+      "nameEn": "Black Tobiko Roll",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/black-tobiko-roll.png"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "batchNumber": 5,
+  "timestamp": "2026-03-08T08:07:36.084Z",
+  "dishes": [
+    {
+      "name": "חמוץ מתוק",
+      "nameEn": "Sweet and Sour",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/sweet-and-sour.png"
+    },
+    {
+      "name": "פאד קפאו בקר",
+      "nameEn": "Pad Krapow Beef",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/pad-krapow-beef.png"
+    },
+    {
+      "name": "דג בקשיו",
+      "nameEn": "Fish with Cashew",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/fish-with-cashew.png"
+    },
+    {
+      "name": "עוף בקשיו",
+      "nameEn": "Chicken with Cashew",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/chicken-with-cashew.png"
+    },
+    {
+      "name": "טופו סאמוי",
+      "nameEn": "Tofu Samui",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/tofu-samui.png"
+    },
+    {
+      "name": "צ׳יקן סאמוי",
+      "nameEn": "Chicken Samui",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/chicken-samui.png"
+    },
+    {
+      "name": "ביף סאמוי",
+      "nameEn": "Beef Samui",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/beef-samui.png"
+    },
+    {
+      "name": "צ׳זה טופו",
+      "nameEn": "Chezah Tofu",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/chezah-tofu.png"
+    },
+    {
+      "name": "צ׳זה עוף",
+      "nameEn": "Chezah Chicken",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/chezah-chicken.png"
+    },
+    {
+      "name": "צ׳זה בקר",
+      "nameEn": "Chezah Beef",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/chezah-beef.png"
+    },
+    {
+      "name": "פילה סלמון גריל",
+      "nameEn": "Grilled Salmon Fillet",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/grilled-salmon-fillet.png"
+    },
+    {
+      "name": "חזה עוף בגריל",
+      "nameEn": "Grilled Chicken Breast",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/grilled-chicken-breast.png"
+    },
+    {
+      "name": "טוריקצ׳ו",
+      "nameEn": "Torikatsu",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/torikatsu.png"
+    },
+    {
+      "name": "באן בורגר קידס",
+      "nameEn": "Kids Bao Burger",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/kids-bao-burger.png"
+    },
+    {
+      "name": "קריספי צ׳יקן קידס",
+      "nameEn": "Kids Crispy Chicken",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/kids-crispy-chicken.png"
+    },
+    {
+      "name": "אצבעות עוף",
+      "nameEn": "Chicken Fingers",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/chicken-fingers.png"
+    },
+    {
+      "name": "פרש נודלס קידס טופו",
+      "nameEn": "Kids Fresh Noodles Tofu",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/kids-fresh-noodles-tofu.png"
+    },
+    {
+      "name": "פרש נודלס קידס עוף",
+      "nameEn": "Kids Fresh Noodles Chicken",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/kids-fresh-noodles-chicken.png"
+    },
+    {
+      "name": "קטיפה אדומה",
+      "nameEn": "Red Velvet",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/red-velvet.png"
+    },
+    {
+      "name": "הבית של פיסטוק",
+      "nameEn": "Pistachio House",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/pistachio-house.png"
+    }
+  ]
+}

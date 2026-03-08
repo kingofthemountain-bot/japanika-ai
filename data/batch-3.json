@@ -1,0 +1,106 @@
+{
+  "batchNumber": 3,
+  "timestamp": "2026-03-08T08:02:53.721Z",
+  "dishes": [
+    {
+      "name": "סלמון טוגרשי",
+      "nameEn": "Salmon Togarashi",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/salmon-togarashi.png"
+    },
+    {
+      "name": "ווייט רויאל",
+      "nameEn": "White Royal",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/white-royal.png"
+    },
+    {
+      "name": "רוק אנד רול",
+      "nameEn": "Rock and Roll",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/rock-and-roll.png"
+    },
+    {
+      "name": "טייגר רול",
+      "nameEn": "Tiger Roll",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/tiger-roll.png"
+    },
+    {
+      "name": "וולקנו רול",
+      "nameEn": "Volcano Roll",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/volcano-roll.png"
+    },
+    {
+      "name": "פיני רול",
+      "nameEn": "Finny Roll",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/finny-roll.png"
+    },
+    {
+      "name": "מנטה רול",
+      "nameEn": "Mint Roll",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/mint-roll.png"
+    },
+    {
+      "name": "וול סטריט",
+      "nameEn": "Wall Street",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/wall-street.png"
+    },
+    {
+      "name": "סלמון צ׳יז רול",
+      "nameEn": "Salmon Cheese Roll",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/salmon-cheese-roll.png"
+    },
+    {
+      "name": "ספיישל ג'פניקה",
+      "nameEn": "Japanika Special",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/japanika-special.png"
+    },
+    {
+      "name": "קומבינציה צמחונית",
+      "nameEn": "Vegetarian Combo",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/vegetarian-combo.png"
+    },
+    {
+      "name": "קומבינציה טבעונית",
+      "nameEn": "Vegan Combo",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/vegan-combo.png"
+    },
+    {
+      "name": "קומבינציית טוקיו",
+      "nameEn": "Tokyo Combo",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/tokyo-combo.png"
+    },
+    {
+      "name": "קומבינציית קאטאנא",
+      "nameEn": "Katana Combo",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/katana-combo.png"
+    },
+    {
+      "name": "קומבינציית מיקס",
+      "nameEn": "Mix Combo",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/mix-combo.png"
+    },
+    {
+      "name": "קומבינציית סלמון",
+      "nameEn": "Salmon Combo",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/salmon-combo.png"
+    },
+    {
+      "name": "אלפרדו אסייאתי ירקות",
+      "nameEn": "Asian Alfredo Vegetables",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/asian-alfredo-vegetables.png"
+    },
+    {
+      "name": "אלפרדו אסייאתי טופו",
+      "nameEn": "Asian Alfredo Tofu",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/asian-alfredo-tofu.png"
+    },
+    {
+      "name": "אלפרדו אסייאתי עוף",
+      "nameEn": "Asian Alfredo Chicken",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/asian-alfredo-chicken.png"
+    },
+    {
+      "name": "אלפרדו אסייאתי בקר",
+      "nameEn": "Asian Alfredo Beef",
+      "imagePath": "/home/node/.joni/workspace/japanika-content/images/dishes/asian-alfredo-beef.png"
+    }
+  ]
+}
