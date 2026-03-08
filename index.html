@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ג'פניקה - חוויה יפנית אותנטית</title>
+    <title>Japanika.AI - טעם של יפן × בינה מלאכותית</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,14 +14,16 @@
     <nav class="nav" id="nav">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html">
-                    <img src="images/logo/japanika-logo-transparent.png?v=4" alt="ג'פניקה" class="logo-image">
+                <a href="index.html" style="position: relative; display: inline-block;">
+                    <img src="images/logo/japanika-logo-transparent.png?v=4" alt="Japanika.AI" class="logo-image">
+                    <span style="position: absolute; bottom: -5px; right: -15px; background: #D32F2F; color: white; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: bold; box-shadow: 0 2px 10px rgba(211, 47, 47, 0.4);">AI</span>
                 </a>
             </div>
             <div class="nav-links">
                 <a href="menu.html" class="nav-link">תפריט</a>
                 <a href="about.html" class="nav-link">אודות</a>
                 <a href="branches.html" class="nav-link">סניפים</a>
+                <a href="api.html" class="nav-link">API למפתחים</a>
                 <a href="https://www.japanika.net/" target="_blank" class="nav-link cta-button">הזמינו עכשיו</a>
             </div>
             <div class="hamburger" id="hamburger">
@@ -36,18 +38,90 @@
     <section class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="hero-content">
+            <div style="display: inline-block; background: #D32F2F; padding: 0.5rem 1.5rem; border-radius: 50px; font-size: 0.9rem; font-weight: 600; margin-bottom: 2rem; border: 2px solid rgba(255, 255, 255, 0.2); color: white;">
+                🤖 מופעל בבינה מלאכותית
+            </div>
             <h1 class="hero-title fade-in">
-                <span class="hero-title-main">טעם של יפן</span>
-                <span class="hero-title-sub">אומנות קולינרית אסייתית</span>
+                <span class="hero-title-main">טעם של יפן × AI</span>
+                <span class="hero-title-sub">אומנות קולינרית פוגשת בינה מלאכותית</span>
             </h1>
-            <p class="hero-text fade-in delay-1">סושי טרי, ווק מושלם, חוויה בלתי נשכחת</p>
+            <p class="hero-text fade-in delay-1">
+                האתר הראשון בעולם של רשת מסעדות שמיועד לסוכני AI וגם לבני אדם.<br>
+                הזמינו בשפה טבעית, שאלו שאלות, גלו את התפריט - הכל דרך AI.
+            </p>
             <div class="hero-buttons fade-in delay-2">
-                <a href="https://www.japanika.net/" target="_blank" class="btn btn-primary">הזמינו משלוח</a>
-                <a href="menu.html" class="btn btn-secondary">לתפריט המלא</a>
+                <a href="#ai-chat" class="btn btn-primary pulse">💬 דברו עם ה-AI</a>
+                <a href="menu.html" class="btn btn-secondary">📖 לתפריט המלא</a>
+                <a href="api.html" class="btn btn-secondary">🔧 API למפתחים</a>
             </div>
         </div>
         <div class="scroll-indicator">
             <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- AI Chat Section -->
+    <section class="ai-chat-section" id="ai-chat">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🤖 דברו עם ה-AI שלנו</h2>
+                <p class="section-subtitle">שאלו מה שאתם רוצים - ה-AI יעזור לכם להזמין, לחקור את התפריט, ולמצוא מנות</p>
+            </div>
+            
+            <div class="ai-chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content">
+                            <strong>Japanika AI</strong><br>
+                            שלום! אני סוכן ה-AI של ג'פניקה. אני יכול לעזור לכם:
+                            <ul>
+                                <li>🍱 להזמין אוכל בשפה טבעית</li>
+                                <li>📋 למצוא מנות לפי העדפות (טבעוני, ללא גלוטן וכו')</li>
+                                <li>💰 לראות מחירים ולבנות הזמנה</li>
+                                <li>📍 למצוא סניף קרוב</li>
+                            </ul>
+                            מה תרצו היום?
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quick-actions">
+                    <button class="quick-btn" onclick="sendQuickMessage('מה יש לכם טבעוני?')">🌱 מנות טבעוניות</button>
+                    <button class="quick-btn" onclick="sendQuickMessage('אני רוצה 2 רולי סלמון')">🍣 להזמין סושי</button>
+                    <button class="quick-btn" onclick="sendQuickMessage('כמה עולה קומבו משפחתי?')">💰 מחירים</button>
+                    <button class="quick-btn" onclick="sendQuickMessage('איפה הסניף הקרוב?')">📍 סניפים</button>
+                </div>
+                
+                <div class="chat-input-container">
+                    <input type="text" class="chat-input" id="chatInput" placeholder="כתבו כאן את השאלה או ההזמנה שלכם...">
+                    <button class="chat-send-btn" onclick="sendMessage()">📤 שלח</button>
+                </div>
+            </div>
+
+            <!-- AI Features Grid -->
+            <div class="ai-features-grid">
+                <div class="ai-feature-card">
+                    <div class="feature-icon">🗣️</div>
+                    <h3>שפה טבעית</h3>
+                    <p>דברו רגיל - "אני רוצה 2 רולי טונה" או "מה יש ללא גלוטן?"</p>
+                </div>
+                <div class="ai-feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>חיפוש חכם</h3>
+                    <p>ה-AI מבין העדפות תזונתיות, מרכיבים, ומציע המלצות</p>
+                </div>
+                <div class="ai-feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>מהיר וזמין 24/7</h3>
+                    <p>תשובות מיידיות בכל שעה - בן אדם או AI agent</p>
+                </div>
+                <div class="ai-feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>API למפתחים</h3>
+                    <p>חברו את סוכן ה-AI שלכם לג'פניקה דרך ה-API שלנו</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -64,8 +138,8 @@
                     <div class="stat-label">רולים בחודש</div>
                 </div>
                 <div class="stat-card fade-in-scroll">
-                    <div class="stat-number">5,000+</div>
-                    <div class="stat-label">סועדים ביום</div>
+                    <div class="stat-number">AI-First</div>
+                    <div class="stat-label">האתר הראשון בעולם</div>
                 </div>
                 <div class="stat-card fade-in-scroll">
                     <div class="stat-number">2004</div>
@@ -75,117 +149,115 @@
         </div>
     </section>
 
+    <!-- How It Works for AI Agents -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">איך זה עובד לסוכני AI?</h2>
+                <p class="section-subtitle">מדריך מהיר למפתחים ולסוכני AI</p>
+            </div>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>התחברו ל-API</h3>
+                    <p>שלחו בקשת POST ל-<code>/api/chat</code> עם הודעה בשפה טבעית</p>
+                    <code>POST /api/chat<br>{"message": "I want 2 salmon rolls"}</code>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>קבלו תשובה מובנית</h3>
+                    <p>ה-AI מחזיר JSON עם פירוט ההזמנה והמחיר</p>
+                    <code>{"items": [...], "total": 48}</code>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>בצעו הזמנה</h3>
+                    <p>שלחו את ההזמנה המלאה דרך <code>/api/order</code></p>
+                    <code>POST /api/order</code>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="api.html" class="btn btn-primary">📚 לתיעוד המלא של ה-API</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Featured Dishes Preview -->
     <section class="featured" id="menu-preview">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">המנות שלנו</h2>
-                <p class="section-subtitle">כל מנה היא יצירת אמנות</p>
-            </div>
-            
-            <div class="dishes-grid">
-                <div class="dish-card fade-in-scroll">
-                    <div class="dish-image-wrapper">
-                        <img src="images/dishes/קריספי-רייס-ספייסי-סלמון_1211.png" alt="קריספי רייס ספייסי סלמון" class="dish-image">
-                        <div class="dish-overlay">
-                            <a href="menu.html" class="btn-view">לתפריט המלא</a>
+            <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">🍱 מבחר מהתפריט</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="images/dishes/סלמון-ניגירי.png" alt="סלמון ניגירי" class="menu-item-image" onerror="this.src='images/placeholder.png'">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">
+                                <strong>סלמון ניגירי</strong>
+                                <div class="menu-item-name-en">Salmon Nigiri</div>
+                            </div>
+                            <div class="menu-item-price">₪24</div>
                         </div>
+                        <span class="tag">פופולרי</span>
                     </div>
-                    <div class="dish-info">
-                        <h3 class="dish-name">קריספי רייס ספייסי סלמון</h3>
-                        <p class="dish-description">אורז קריספי עם סלמון ספייסי טרי</p>
-                        <div class="dish-footer">
-                            <span class="dish-price">₪54</span>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/dishes/קליפורניה-רול.png" alt="קליפורניה רול" class="menu-item-image" onerror="this.src='images/placeholder.png'">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">
+                                <strong>קליפורניה רול</strong>
+                                <div class="menu-item-name-en">California Roll</div>
+                            </div>
+                            <div class="menu-item-price">₪36</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="dish-card fade-in-scroll">
-                    <div class="dish-image-wrapper">
-                        <img src="images/dishes/פאד-תאי_4211.png" alt="פאד תאי" class="dish-image">
-                        <div class="dish-overlay">
-                            <a href="menu.html" class="btn-view">לתפריט המלא</a>
+                <div class="menu-item">
+                    <img src="images/dishes/מיסו-סופ.png" alt="מרק מיסו" class="menu-item-image" onerror="this.src='images/placeholder.png'">
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <div class="menu-item-name">
+                                <strong>מרק מיסו</strong>
+                                <div class="menu-item-name-en">Miso Soup</div>
+                            </div>
+                            <div class="menu-item-price">₪21</div>
                         </div>
-                    </div>
-                    <div class="dish-info">
-                        <h3 class="dish-name">פאד תאי</h3>
-                        <p class="dish-description">נודלס אורז מוקפצים בסגנון תאילנדי</p>
-                        <div class="dish-footer">
-                            <span class="dish-price">₪51-62</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dish-card fade-in-scroll">
-                    <div class="dish-image-wrapper">
-                        <img src="images/dishes/סושי-מעורב_2115-scaled.jpg" alt="סושי מעורב" class="dish-image">
-                        <div class="dish-overlay">
-                            <a href="menu.html" class="btn-view">לתפריט המלא</a>
-                        </div>
-                    </div>
-                    <div class="dish-info">
-                        <h3 class="dish-name">סושי מעורב</h3>
-                        <p class="dish-description">מבחר סושי טרי מדגים מובחרים</p>
-                        <div class="dish-footer">
-                            <span class="dish-price">₪47-74</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dish-card fade-in-scroll">
-                    <div class="dish-image-wrapper">
-                        <img src="images/dishes/גיוזה-עוף_1314.png" alt="גיוזה עוף" class="dish-image">
-                        <div class="dish-overlay">
-                            <a href="menu.html" class="btn-view">לתפריט המלא</a>
-                        </div>
-                    </div>
-                    <div class="dish-info">
-                        <h3 class="dish-name">גיוזה עוף</h3>
-                        <p class="dish-description">כיסונים יפניים במילוי עוף - 5 יח'</p>
-                        <div class="dish-footer">
-                            <span class="dish-price">₪35</span>
-                        </div>
+                        <span class="tag">טבעוני</span>
                     </div>
                 </div>
             </div>
 
-            <div class="text-center" style="margin-top: 3rem;">
-                <a href="menu.html" class="btn btn-primary">לתפריט המלא עם 120+ מנות</a>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="menu.html" class="btn btn-primary">📖 לתפריט המלא עם כל התמונות</a>
             </div>
         </div>
     </section>
 
-    <!-- About Preview -->
-    <section class="about-preview">
+    <!-- API Teaser -->
+    <section class="api-teaser">
         <div class="container">
-            <div class="about-content-grid">
-                <div class="about-text fade-in-scroll">
-                    <h2 class="section-title">הסיפור שלנו</h2>
-                    <p class="about-description">
-                        רשת ג'פניקה מתמחה בנפלאות המטבח האסייתי על כל סוגיו, ובפרט בכל הקשור לעולם הסושי.
-                    </p>
-                    <p class="about-description">
-                        העקרונות המנחים אותנו הם שילוב של חומרי גלם טריים ואיכותיים לצד מחירים נוחים ותודעת שירות גבוהה.
-                    </p>
-                    <a href="about.html" class="btn btn-secondary">קראו עוד אודותינו</a>
-                </div>
-                <div class="about-image fade-in-scroll">
-                    <img src="images/dishes/מגש-עסקי-גדול_5214.png" alt="ג'פניקה" style="width: 100%; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="api-box">
+                <h2>🔧 API למפתחים ולסוכני AI</h2>
+                <p>חברו את סוכן ה-AI שלכם לג'פניקה בקלות</p>
+                <pre><code>// JavaScript Example
+const response = await fetch('https://japanika.ai/api/chat', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ 
+    message: "I want 2 salmon rolls and miso soup" 
+  })
+});
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">מוכנים להזמין?</h2>
-                <p class="cta-text">הצטרפו לאלפי לקוחות מרוצים ותהנו מחוויה קולינרית יפנית אותנטית</p>
-                <div class="cta-buttons">
-                    <a href="https://www.japanika.net/" target="_blank" class="btn btn-primary">הזמינו עכשיו</a>
-                    <a href="branches.html" class="btn btn-secondary">מצאו סניף קרוב</a>
-                </div>
+const data = await response.json();
+console.log(data.response);
+// "Added: Salmon Roll x2 (₪48), Miso Soup (₪21). Total: ₪69"</code></pre>
+                <a href="api.html" class="btn btn-primary" style="margin-top: 2rem;">📚 לתיעוד המלא</a>
             </div>
         </div>
     </section>
@@ -193,34 +265,94 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-content">
                 <div class="footer-section">
-                    <h3 class="footer-title">ג'פניקה</h3>
-                    <p class="footer-text">רשת המסעדות האסייתיות המובילה בישראל</p>
+                    <h3>Japanika.AI</h3>
+                    <p>אתר הג'פניקה הראשון בעולם המיועד לבני אדם וסוכני AI</p>
+                    <div class="ai-badge-footer">🤖 AI-POWERED</div>
                 </div>
+                
                 <div class="footer-section">
-                    <h4 class="footer-subtitle">קישורים</h4>
-                    <ul class="footer-links">
-                        <li><a href="menu.html">תפריט</a></li>
+                    <h4>קישורים</h4>
+                    <ul>
+                        <li><a href="menu.html">תפריט מלא</a></li>
                         <li><a href="about.html">אודות</a></li>
                         <li><a href="branches.html">סניפים</a></li>
-                        <li><a href="https://www.japanika.net/" target="_blank">הזמנות</a></li>
+                        <li><a href="api.html">API למפתחים</a></li>
                     </ul>
                 </div>
+                
                 <div class="footer-section">
-                    <h4 class="footer-subtitle">צרו קשר</h4>
-                    <ul class="footer-links">
-                        <li>43 סניפים ברחבי הארץ</li>
-                        <li><a href="https://www.japanika.net/" target="_blank">www.japanika.net</a></li>
+                    <h4>למפתחים</h4>
+                    <ul>
+                        <li><a href="api.html">תיעוד API</a></li>
+                        <li><a href="/api/menu.json">Menu JSON</a></li>
+                        <li><a href="/api/branches.json">Branches JSON</a></li>
+                        <li><a href="https://github.com/kingofthemountain-bot/japanika-ai">GitHub</a></li>
                     </ul>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2024 ג'פניקה. כל הזכויות שמורות.</p>
+                <p>&copy; 2026 Japanika.AI - האתר הראשון בעולם של רשת מסעדות לסוכני AI</p>
+                <p>Built with ❤️ by JONI AI</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Simple AI Chat Demo (replace with real API)
+        function sendMessage() {
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim();
+            if (!message) return;
+            
+            const chatMessages = document.getElementById('chatMessages');
+            
+            // Add user message
+            chatMessages.innerHTML += `
+                <div class="message user-message">
+                    <div class="message-avatar">👤</div>
+                    <div class="message-content">${message}</div>
+                </div>
+            `;
+            
+            // Simulate AI response
+            setTimeout(() => {
+                const responses = {
+                    'טבעוני': 'יש לנו מגוון רחב של מנות טבעוניות: אדממה (₪21), רול אבוקדו (₪32), טופו טריאקי (₪54), ווק ירקות (₪48) ועוד. מה מעניין אותך?',
+                    'סלמון': 'רולי סלמון מדהימים! יש לנו: רול סלמון קלאסי (₪36), סלמון ניגירי (₪24), סלמון סשימי (₪48). כמה תרצה?',
+                    'default': 'קיבלתי! אני יכול לעזור לך להזמין, לחפש מנות, או לענות על שאלות. מה תרצה לדעת?'
+                };
+                
+                let botResponse = responses.default;
+                if (message.includes('טבעוני') || message.includes('vegan')) botResponse = responses['טבעוני'];
+                if (message.includes('סלמון') || message.includes('salmon')) botResponse = responses['סלמון'];
+                
+                chatMessages.innerHTML += `
+                    <div class="message bot-message">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content">${botResponse}</div>
+                    </div>
+                `;
+                
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }, 500);
+            
+            input.value = '';
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        function sendQuickMessage(msg) {
+            document.getElementById('chatInput').value = msg;
+            sendMessage();
+        }
+        
+        // Enter to send
+        document.getElementById('chatInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+    </script>
 </body>
 </html>
