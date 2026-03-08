@@ -120,3 +120,10 @@ img {
         overflow-x: hidden !important;
     }
 }
+
+/* Hide scroll indicator on mobile */
+@media (max-width: 768px) {
+    .scroll-indicator {
+        display: none !important;
+    }
+}
