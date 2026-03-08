@@ -6,6 +6,7 @@
     <title>Japanika.AI API Documentation</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
+        :root { --primary-red: #D32F2F; --primary-black: #000000; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', sans-serif;
@@ -19,7 +20,7 @@
             padding: 2rem;
         }
         header {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: var(--primary-black);
             color: white;
             padding: 4rem 0;
             text-align: center;
@@ -40,13 +41,13 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
         }
         h2 {
-            color: #667eea;
+            color: var(--primary-red);
             margin: 2rem 0 1rem;
             padding-bottom: 0.5rem;
-            border-bottom: 2px solid #667eea;
+            border-bottom: 2px solid var(--primary-red);
         }
         h3 {
-            color: #764ba2;
+            color: var(--primary-red);
             margin: 1.5rem 0 0.5rem;
         }
         code {
@@ -71,7 +72,7 @@
         }
         .endpoint {
             background: #f8f9fa;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid var(--primary-red);
             padding: 1rem;
             margin: 1rem 0;
             border-radius: 4px;
@@ -88,7 +89,7 @@
         .post { background: #007bff; color: white; }
         .badge {
             display: inline-block;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: var(--primary-black);
             color: white;
             padding: 0.3rem 1rem;
             border-radius: 20px;
