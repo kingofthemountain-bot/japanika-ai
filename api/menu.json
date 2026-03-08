@@ -1,0 +1,201 @@
+{
+  "restaurant": "Japanika",
+  "description": "רשת ג'פניקה מתמחה בנפלאות המטבח האסייתי על כל סוגיו, ובפרט בכל הקשור לעולם הסושי",
+  "categories": [
+    {
+      "id": "appetizers",
+      "name": "מנות פתיחה",
+      "nameEn": "Appetizers",
+      "dishes": [
+        {"name": "קריספי רייס ספייסי סלמון", "nameEn": "Crispy Rice Spicy Salmon", "price": 54},
+        {"name": "קריספי רייס ספייסי דניס", "nameEn": "Crispy Rice Spicy Sea Bass", "price": 52},
+        {"name": "קריספי רייס ספייסי טונה", "nameEn": "Crispy Rice Spicy Tuna", "price": 52},
+        {"name": "וונטון", "nameEn": "Wonton", "price": 34, "tags": ["vegan"]},
+        {"name": "משולשי סלמון ומוצרלה", "nameEn": "Salmon & Mozzarella Triangles", "price": 46},
+        {"name": "נאמס עוף", "nameEn": "Chicken Nams", "price": 47},
+        {"name": "אדממה", "nameEn": "Edamame", "price": 21, "tags": ["vegan", "gluten-free"]},
+        {"name": "ספרינג רול ירקות", "nameEn": "Vegetable Spring Roll", "price": 35},
+        {"name": "גיוזה עוף 5 יח'", "nameEn": "Chicken Gyoza 5pc", "price": 35},
+        {"name": "גיוזה בטטה 5 יח'", "nameEn": "Sweet Potato Gyoza 5pc", "price": 32, "tags": ["vegan"]},
+        {"name": "כנפיים קטן", "nameEn": "Wings Small", "price": 29},
+        {"name": "כנפיים גדול", "nameEn": "Wings Large", "price": 41},
+        {"name": "קריספי בטטה", "nameEn": "Crispy Sweet Potato", "price": 27, "tags": ["vegan"]}
+      ]
+    },
+    {
+      "id": "soups",
+      "name": "מרקים",
+      "nameEn": "Soups",
+      "dishes": [
+        {"name": "טום יאם תאילנדי ירקות", "nameEn": "Tom Yum Thai Vegetables", "price": 31},
+        {"name": "טום יאם תאילנדי עוף", "nameEn": "Tom Yum Thai Chicken", "price": 46},
+        {"name": "מרק מיסו", "nameEn": "Miso Soup", "price": 21},
+        {"name": "מרק בטטה וג׳ינג׳ר", "nameEn": "Sweet Potato & Ginger Soup", "price": 36, "tags": ["vegan"]}
+      ]
+    },
+    {
+      "id": "salads",
+      "name": "סלטים",
+      "nameEn": "Salads",
+      "dishes": [
+        {"name": "סלט תפוחים קריספי", "nameEn": "Crispy Apple Salad", "price": 42},
+        {"name": "ספייסי צ׳יקן סלט", "nameEn": "Spicy Chicken Salad", "price": 49},
+        {"name": "סלט וואקמה", "nameEn": "Wakame Salad", "price": 35},
+        {"name": "סלט שורשים", "nameEn": "Root Vegetable Salad", "price": 39, "tags": ["vegan"]}
+      ]
+    },
+    {
+      "id": "bao",
+      "name": "באן",
+      "nameEn": "Bao Buns",
+      "dishes": [
+        {"name": "באן בורגר – 2 יח'", "nameEn": "Bao Burger - 2pc", "price": 62},
+        {"name": "באן בקר מפורק – 2 יח'", "nameEn": "Bao Pulled Beef - 2pc", "price": 49},
+        {"name": "באן שניצל עוף – 2 יח'", "nameEn": "Bao Chicken Schnitzel - 2pc", "price": 42},
+        {"name": "באן טופו – 2 יח'", "nameEn": "Bao Tofu - 2pc", "price": 42}
+      ]
+    },
+    {
+      "id": "sushi-custom",
+      "name": "סושי בהרכבה",
+      "nameEn": "Build Your Own Sushi",
+      "dishes": [
+        {"name": "מאקי ירק", "nameEn": "Maki Vegetable", "price": 22},
+        {"name": "מאקי דג", "nameEn": "Maki Fish", "price": 25},
+        {"name": "פוטומאקי 4 יח'", "nameEn": "Futomaki 4pc", "price": 22},
+        {"name": "קונוס ירק", "nameEn": "Vegetable Cone", "price": 26},
+        {"name": "קונוס דג", "nameEn": "Fish Cone", "price": 33},
+        {"name": "ניגירי סלמון", "nameEn": "Salmon Nigiri", "price": 24},
+        {"name": "ניגירי טונה אדומה", "nameEn": "Red Tuna Nigiri", "price": 27},
+        {"name": "ניגירי דניס", "nameEn": "Sea Bass Nigiri", "price": 29},
+        {"name": "סשימי סלמון", "nameEn": "Salmon Sashimi", "price": 39},
+        {"name": "סשימי טונה", "nameEn": "Tuna Sashimi", "price": 42},
+        {"name": "סשימי דניס", "nameEn": "Sea Bass Sashimi", "price": 48}
+      ]
+    },
+    {
+      "id": "special-sushi",
+      "name": "ספיישל סושי",
+      "nameEn": "Special Sushi Rolls",
+      "dishes": [
+        {"name": "קריספי האמצ'י ויוזו", "nameEn": "Crispy Hamachi Yuzu", "price": 61},
+        {"name": "האמצ'י כמהין", "nameEn": "Hamachi Kamehameha", "price": 59},
+        {"name": "ג׳פנקו", "nameEn": "Japanko", "price": 42},
+        {"name": "ג'פנקו דג", "nameEn": "Japanko Fish", "price": 49},
+        {"name": "בלאק טוביקו רול", "nameEn": "Black Tobiko Roll", "price": 61},
+        {"name": "סלמון טוגרשי", "nameEn": "Salmon Togarashi", "price": 59},
+        {"name": "ווייט רויאל", "nameEn": "White Royal", "price": 56},
+        {"name": "רוק אנד רול", "nameEn": "Rock and Roll", "price": 54},
+        {"name": "טייגר רול", "nameEn": "Tiger Roll", "price": 54},
+        {"name": "וולקנו רול", "nameEn": "Volcano Roll", "price": 58},
+        {"name": "פיני רול", "nameEn": "Finny Roll", "price": 52},
+        {"name": "מנטה רול", "nameEn": "Mint Roll", "price": 51},
+        {"name": "וול סטריט", "nameEn": "Wall Street", "price": 45},
+        {"name": "סלמון צ׳יז רול", "nameEn": "Salmon Cheese Roll", "price": 52},
+        {"name": "ספיישל ג'פניקה", "nameEn": "Japanika Special", "price": 48}
+      ]
+    },
+    {
+      "id": "combinations",
+      "name": "קומבינציות",
+      "nameEn": "Combinations",
+      "dishes": [
+        {"name": "קומבינציה צמחונית", "nameEn": "Vegetarian Combo", "price": 47, "tags": ["vegetarian"]},
+        {"name": "קומבינציה טבעונית", "nameEn": "Vegan Combo", "price": 47, "tags": ["vegan"]},
+        {"name": "קומבינציית טוקיו", "nameEn": "Tokyo Combo", "price": 62},
+        {"name": "קומבינציית קאטאנא", "nameEn": "Katana Combo", "price": 65},
+        {"name": "קומבינציית מיקס", "nameEn": "Mix Combo", "price": 74},
+        {"name": "קומבינציית סלמון", "nameEn": "Salmon Combo", "price": 74}
+      ]
+    },
+    {
+      "id": "wok",
+      "name": "מנות ווק",
+      "nameEn": "Wok Dishes",
+      "dishes": [
+        {"name": "אלפרדו אסייאתי ירקות", "nameEn": "Asian Alfredo Vegetables", "price": 57},
+        {"name": "אלפרדו אסייאתי טופו", "nameEn": "Asian Alfredo Tofu", "price": 61},
+        {"name": "אלפרדו אסייאתי עוף", "nameEn": "Asian Alfredo Chicken", "price": 67},
+        {"name": "אלפרדו אסייאתי בקר", "nameEn": "Asian Alfredo Beef", "price": 69},
+        {"name": "אלפרדו אסייאתי סלמון", "nameEn": "Asian Alfredo Salmon", "price": 73},
+        {"name": "פרש נודלס ירקות", "nameEn": "Fresh Noodles Vegetables", "price": 49},
+        {"name": "פרש נודלס עוף", "nameEn": "Fresh Noodles Chicken", "price": 54},
+        {"name": "פרש נודלס בקר", "nameEn": "Fresh Noodles Beef", "price": 61},
+        {"name": "ספיישל פרש נודלס", "nameEn": "Special Fresh Noodles", "price": 63},
+        {"name": "צ׳אנג מאי ירקות", "nameEn": "Chiang Mai Vegetables", "price": 58},
+        {"name": "צ׳אנג מאי עוף", "nameEn": "Chiang Mai Chicken", "price": 63},
+        {"name": "פאד תאי ירקות", "nameEn": "Pad Thai Vegetables", "price": 51},
+        {"name": "פאד תאי עוף", "nameEn": "Pad Thai Chicken", "price": 58},
+        {"name": "פאד תאי בקר", "nameEn": "Pad Thai Beef", "price": 61},
+        {"name": "פאד תאי סלמון", "nameEn": "Pad Thai Salmon", "price": 62},
+        {"name": "מקאו ירקות", "nameEn": "Macau Vegetables", "price": 54},
+        {"name": "מקאו עוף", "nameEn": "Macau Chicken", "price": 61},
+        {"name": "מקאו סלמון", "nameEn": "Macau Salmon", "price": 66}
+      ]
+    },
+    {
+      "id": "rice-grill",
+      "name": "אורז וגריל",
+      "nameEn": "Rice & Grill",
+      "dishes": [
+        {"name": "קארי מסמאן טופו", "nameEn": "Massaman Curry Tofu", "price": 54},
+        {"name": "קארי מסמאן עוף", "nameEn": "Massaman Curry Chicken", "price": 57},
+        {"name": "קארי מסמאן דניס", "nameEn": "Massaman Curry Sea Bass", "price": 65},
+        {"name": "מוקפץ צ'ילי קוקוס טופו", "nameEn": "Chili Coconut Tofu Stir Fry", "price": 59, "tags": ["vegan"]},
+        {"name": "מוקפץ צ'ילי קוקוס עוף", "nameEn": "Chili Coconut Chicken Stir Fry", "price": 64},
+        {"name": "מוקפץ צ'ילי קוקוס בקר", "nameEn": "Chili Coconut Beef Stir Fry", "price": 67},
+        {"name": "חמוץ מתוק", "nameEn": "Sweet and Sour", "price": 59},
+        {"name": "פאד קפאו בקר", "nameEn": "Pad Krapow Beef", "price": 62},
+        {"name": "דג בקשיו", "nameEn": "Fish with Cashew", "price": 64},
+        {"name": "עוף בקשיו", "nameEn": "Chicken with Cashew", "price": 63},
+        {"name": "טופו סאמוי", "nameEn": "Tofu Samui", "price": 57},
+        {"name": "צ׳יקן סאמוי", "nameEn": "Chicken Samui", "price": 64},
+        {"name": "ביף סאמוי", "nameEn": "Beef Samui", "price": 67},
+        {"name": "צ׳זה טופו", "nameEn": "Chezah Tofu", "price": 54},
+        {"name": "צ׳זה עוף", "nameEn": "Chezah Chicken", "price": 57},
+        {"name": "צ׳זה בקר", "nameEn": "Chezah Beef", "price": 66},
+        {"name": "פילה סלמון גריל", "nameEn": "Grilled Salmon Fillet", "price": 83},
+        {"name": "חזה עוף בגריל", "nameEn": "Grilled Chicken Breast", "price": 59},
+        {"name": "טוריקצ׳ו", "nameEn": "Torikatsu", "price": 57}
+      ]
+    },
+    {
+      "id": "kids",
+      "name": "ג'פניקידס",
+      "nameEn": "Japanikids",
+      "dishes": [
+        {"name": "באן בורגר קידס", "nameEn": "Kids Bao Burger", "price": 44},
+        {"name": "קריספי צ׳יקן קידס", "nameEn": "Kids Crispy Chicken", "price": 44},
+        {"name": "אצבעות עוף", "nameEn": "Chicken Fingers", "price": 44},
+        {"name": "פרש נודלס קידס טופו", "nameEn": "Kids Fresh Noodles Tofu", "price": 44},
+        {"name": "פרש נודלס קידס עוף", "nameEn": "Kids Fresh Noodles Chicken", "price": 44}
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "קינוחים",
+      "nameEn": "Desserts",
+      "dishes": [
+        {"name": "קטיפה אדומה", "nameEn": "Red Velvet", "price": 31},
+        {"name": "הבית של פיסטוק", "nameEn": "Pistachio House", "price": 31},
+        {"name": "פרלינה נוצ׳לטו", "nameEn": "Praline Nutella", "price": 31, "tags": ["vegan"]},
+        {"name": "בלונדיז", "nameEn": "Blondies", "price": 31},
+        {"name": "עוגת גבינה באסקית", "nameEn": "Basque Cheesecake", "price": 42},
+        {"name": "קוקיז קינדר ענק", "nameEn": "Giant Kinder Cookie", "price": 42},
+        {"name": "כדור רושה", "nameEn": "Rocher Ball", "price": 37, "tags": ["vegan"]},
+        {"name": "סוויט לייק צ׳וקלט", "nameEn": "Sweet Like Chocolate", "price": 41},
+        {"name": "קראק פאי", "nameEn": "Crack Pie", "price": 41},
+        {"name": "ברולה", "nameEn": "Crème Brûlée", "price": 38}
+      ]
+    },
+    {
+      "id": "party-trays",
+      "name": "מגשי מסיבה",
+      "nameEn": "Party Trays",
+      "dishes": [
+        {"name": "מגש מסיבה גדול", "nameEn": "Large Party Platter", "price": 370, "description": "80 יחידות - 10 רולים"},
+        {"name": "מגש מסיבה קטן", "nameEn": "Small Party Platter", "price": 299, "description": "64 יחידות - 8 רולים"}
+      ]
+    }
+  ]
+}

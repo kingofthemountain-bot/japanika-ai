@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תפריט - Japanika.AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <div class="logo-with-ai">
+                        <img src="images/logo/japanika-logo-ai.png" alt="Japanika.AI" class="logo-image">
+                        <span class="ai-badge">AI</span>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">🤖 AI הזמנה</a>
+                <a href="menu.html" class="nav-link active">תפריט</a>
+                <a href="api.html" class="nav-link">API</a>
+                <a href="branches.html" class="nav-link">סניפים</a>
+            </div>
+        </div>
+    </nav>
+
+    <section style="padding: 150px 20px 80px; text-align: center; background: linear-gradient(135deg, #667eea, #764ba2); color: white;">
+        <h1 style="font-size: 3rem; margin-bottom: 1rem;">🍱 התפריט המלא</h1>
+        <p style="font-size: 1.2rem; opacity: 0.9;">או פשוט שאל את ה-AI "מה יש בתפריט?"</p>
+        <a href="index.html#ai-order" class="btn btn-secondary" style="margin-top: 1rem;">שאל את ה-AI</a>
+    </section>
+
+    <section style="padding: 4rem 0; background: #f8f9fa;" id="menu">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <h2 style="color: #667eea; font-size: 2rem; margin-bottom: 1rem;">🤖 הזמנה חכמה</h2>
+                <p style="color: #666; margin-bottom: 1.5rem;">תגיד "אני רוצה..." וה-AI יטפל בשאר</p>
+                <a href="index.html#ai-order" class="btn btn-primary">התחל להזמין</a>
+            </div>
+
+            <div id="menuContainer" style="display: grid; gap: 2rem;"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div style="text-align: center; padding: 2rem 0;">
+                <p>&copy; 2026 Japanika.AI - First AI-Native Restaurant Platform</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Load and display menu from JSON
+        fetch('/api/menu.json')
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById('menuContainer');
+                
+                data.categories.forEach(category => {
+                    const section = document.createElement('div');
+                    section.style.cssText = 'background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);';
+                    
+                    section.innerHTML = `
+                        <h2 style="color: #667eea; margin-bottom: 1.5rem; font-size: 1.8rem;">
+                            ${category.name} <span style="color: #999; font-size: 1rem;">(${category.nameEn})</span>
+                        </h2>
+                        <div style="display: grid; gap: 1rem;">
+                            ${category.dishes.map(dish => `
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+                                    <div>
+                                        <strong>${dish.name}</strong>
+                                        <span style="color: #666; font-size: 0.9rem;"> - ${dish.nameEn}</span>
+                                        ${dish.tags ? `<div style="margin-top: 0.3rem;">
+                                            ${dish.tags.map(tag => `
+                                                <span style="display: inline-block; background: #667eea; color: white; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.75rem; margin-left: 0.3rem;">
+                                                    ${tag}
+                                                </span>
+                                            `).join('')}
+                                        </div>` : ''}
+                                    </div>
+                                    <div style="font-weight: bold; color: #667eea; font-size: 1.1rem;">
+                                        ₪${dish.price}
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    `;
+                    
+                    container.appendChild(section);
+                });
+            })
+            .catch(error => {
+                console.error('Error loading menu:', error);
+                document.getElementById('menuContainer').innerHTML = `
+                    <div style="text-align: center; padding: 3rem; background: white; border-radius: 12px;">
+                        <h3 style="color: #667eea; margin-bottom: 1rem;">התפריט בטעינה...</h3>
+                        <p style="color: #666;">או שאל את ה-AI "מה יש בתפריט?"</p>
+                        <a href="index.html#ai-order" class="btn btn-primary" style="margin-top: 1rem;">לצ'אט AI</a>
+                    </div>
+                `;
+            });
+    </script>
+</body>
+</html>
