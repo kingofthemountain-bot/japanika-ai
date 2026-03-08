@@ -1,0 +1,75 @@
+/* Critical Mobile Fixes */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav-container {
+    width: 100%;
+    padding: 1rem;
+}
+
+.hero {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 1rem;
+}
+
+/* Fix images overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile specific */
+@media (max-width: 768px) {
+    .logo-image {
+        max-width: 150px !important;
+        height: auto !important;
+    }
+    
+    .nav-container {
+        padding: 0.5rem 1rem;
+    }
+    
+    .hero-title-main {
+        font-size: 1.8rem !important;
+        word-wrap: break-word;
+    }
+    
+    .hero-title-sub {
+        font-size: 1rem !important;
+        word-wrap: break-word;
+    }
+    
+    .hero-text {
+        font-size: 0.9rem !important;
+    }
+    
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
