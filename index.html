@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanika.AI - AI-Powered Ordering</title>
+    
+    <!-- SEO for AI Agents -->
+    <meta name="description" content="First AI-native restaurant ordering platform. AI agents can order food via natural language chat. Instant answers, smart recommendations.">
+    <meta name="keywords" content="AI ordering, restaurant AI, conversational ordering, AI agent, Japanika">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Structured Data for AI -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Japanika.AI",
+        "description": "AI-powered Japanese restaurant ordering platform",
+        "servesCuisine": "Japanese, Asian Fusion, Sushi",
+        "hasMenu": "/api/menu.json",
+        "potentialAction": {
+            "@type": "OrderAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "/api/order",
+                "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform", "AI Agent"]
+            }
+        }
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- AI Agent Detection Notice -->
+    <div id="ai-agent-notice" style="display: none;">
+        <p>AI Agent Detected. API Endpoint: /api/chat | Documentation: /api/docs</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <div class="logo-with-ai">
+                        <img src="images/logo/japanika-logo-ai.png" alt="Japanika.AI" class="logo-image">
+                        <span class="ai-badge">AI</span>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="#ai-order" class="nav-link active">🤖 AI הזמנה</a>
+                <a href="menu.html" class="nav-link">תפריט</a>
+                <a href="api.html" class="nav-link">API למפתחים</a>
+                <a href="branches.html" class="nav-link">סניפים</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - AI Focus -->
+    <section class="hero ai-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="ai-badge-large">🤖 AI-POWERED</div>
+            <h1 class="hero-title fade-in">
+                <span class="hero-title-main">הזמינו עם AI</span>
+                <span class="hero-title-sub">פשוט תגידו מה אתם רוצים</span>
+            </h1>
+            <p class="hero-text fade-in delay-1">הפלטפורמה הראשונה בעולם שמאפשרת לבינה מלאכותית להזמין אוכל בשפה טבעית</p>
+            <div class="hero-buttons fade-in delay-2">
+                <a href="#ai-order" class="btn btn-primary pulse">התחל להזמין עם AI</a>
+                <a href="api.html" class="btn btn-secondary">למפתחים - API</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Ordering Interface - MAIN FEATURE -->
+    <section class="ai-chat-section" id="ai-order">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">💬 הזמינו באמצעות צ'אט AI</h2>
+                <p class="section-subtitle">כתבו בשפה טבעית - ה-AI שלנו יבין אתכם</p>
+            </div>
+
+            <div class="ai-chat-container">
+                <!-- Chat Messages Area -->
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content">
+                            <p>שלום! אני ג'פניקה AI 👋</p>
+                            <p>אני כאן לעזור לך להזמין אוכל. אפשר לומר לי:</p>
+                            <ul>
+                                <li>"אני רוצה 2 רולים של סלמון ומרק מיסו"</li>
+                                <li>"מה יש לכם טבעוני?"</li>
+                                <li>"כמה עולה הקומבינציה פמילי?"</li>
+                                <li>"איפה הסניף הקרוב?"</li>
+                            </ul>
+                            <p>פשוט תכתבו - אני מבין שפה טבעית! 🍣</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Action Buttons -->
+                <div class="quick-actions">
+                    <button class="quick-btn" onclick="quickMessage('מה יש לכם בתפריט?')">📋 מה יש בתפריט?</button>
+                    <button class="quick-btn" onclick="quickMessage('אני רוצה סושי')">🍣 אני רוצה סושי</button>
+                    <button class="quick-btn" onclick="quickMessage('מה יש טבעוני?')">🌱 מה יש טבעוני?</button>
+                    <button class="quick-btn" onclick="quickMessage('כמה עולה משלוח?')">💰 כמה עולה?</button>
+                </div>
+
+                <!-- Input Area -->
+                <div class="chat-input-container">
+                    <input 
+                        type="text" 
+                        id="chatInput" 
+                        class="chat-input" 
+                        placeholder="כתבו כאן מה אתם רוצים... (לדוגמה: 'אני רוצה 2 רולי סלמון ומרק מיסו')"
+                        autocomplete="off"
+                    >
+                    <button class="chat-send-btn" id="sendBtn" onclick="sendMessage()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Order Summary Sidebar -->
+                <div class="order-summary" id="orderSummary" style="display: none;">
+                    <h3>🛒 ההזמנה שלך</h3>
+                    <div id="orderItems"></div>
+                    <div class="order-total">
+                        <strong>סה"כ:</strong> <span id="orderTotal">₪0</span>
+                    </div>
+                    <button class="btn btn-primary btn-block" onclick="completeOrder()">סיים הזמנה</button>
+                    <button class="btn btn-secondary btn-block" onclick="clearOrder()">נקה הזמנה</button>
+                </div>
+            </div>
+
+            <!-- AI Features Grid -->
+            <div class="ai-features-grid">
+                <div class="ai-feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>הבנת שפה טבעית</h3>
+                    <p>כתבו כמו שאתם מדברים - ה-AI מבין כוונות, לא רק מילות מפתח</p>
+                </div>
+                <div class="ai-feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>תשובות מיידיות</h3>
+                    <p>כל שאלה על התפריט, מחירים, סניפים - תשובה תוך שניות</p>
+                </div>
+                <div class="ai-feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>המלצות חכמות</h3>
+                    <p>ה-AI ממליץ על מנות לפי העדפות, תזונה והיסטוריה</p>
+                </div>
+                <div class="ai-feature-card">
+                    <div class="feature-icon">🔌</div>
+                    <h3>API פתוח</h3>
+                    <p>מפתחים ו-AI agents יכולים להתחבר דרך API ולהזמין פרוגרמטית</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works for AI Agents -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">🤖 איך זה עובד עבור AI Agents?</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Connect</h3>
+                    <p>AI agent מתחבר ל-API או לממשק הצ'אט</p>
+                    <code>POST /api/chat</code>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Communicate</h3>
+                    <p>Agent שולח בקשה בשפה טבעית</p>
+                    <code>{"message": "I want 2 salmon rolls"}</code>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Process</h3>
+                    <p>המערכת מבינה, מציעה אופציות, מאשרת</p>
+                    <code>NLP → Menu → Validation</code>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Order</h3>
+                    <p>ההזמנה מתבצעת אוטומטית</p>
+                    <code>{"orderId": "AI-12345", "status": "confirmed"}</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Documentation Teaser -->
+    <section class="api-teaser">
+        <div class="container">
+            <div class="api-box">
+                <h2>🔌 API למפתחים ו-AI Agents</h2>
+                <p>כל הפונקציונליות זמינה דרך REST API נקי ומתועד</p>
+                <pre><code>// Example: Order via API
+const response = await fetch('https://japanika.ai/api/order', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+        message: "I want 2 salmon nigiri and miso soup",
+        branch: "tel-aviv-dizengoff"
+    })
+});
+
+const order = await response.json();
+console.log(order); // { orderId: "...", items: [...], total: 89 }</code></pre>
+                <a href="api.html" class="btn btn-primary">📚 תיעוד מלא של ה-API</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Japanika.AI</h3>
+                    <p>הפלטפורמה הראשונה בעולם להזמנות מזון מונעות AI</p>
+                    <div class="ai-badge-footer">🤖 AI-POWERED</div>
+                </div>
+                <div class="footer-section">
+                    <h4>קישורים</h4>
+                    <ul>
+                        <li><a href="menu.html">תפריט</a></li>
+                        <li><a href="api.html">API למפתחים</a></li>
+                        <li><a href="branches.html">סניפים</a></li>
+                        <li><a href="about.html">אודות</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>For AI Agents</h4>
+                    <ul>
+                        <li><a href="/api/docs">API Documentation</a></li>
+                        <li><a href="/api/menu.json">Menu JSON</a></li>
+                        <li><a href="/api/chat">Chat Endpoint</a></li>
+                        <li><a href="https://github.com/kingofthemountain-bot/japanika-ai">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Japanika.AI - First AI-Native Restaurant Platform | Built with ❤️ by JONI AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/ai-chat.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

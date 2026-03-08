@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Japanika AI Logo Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .logo-container {
+            background: white;
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .logo-preview {
+            position: relative;
+            display: inline-block;
+        }
+        .ai-badge {
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            letter-spacing: 1px;
+        }
+        .ai-badge-integrated {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            font-size: 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .description {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+        canvas {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>🤖 Japanika.AI Logo Generator</h1>
+    <p>Creating AI-enhanced versions of both logos with professional badges</p>
+
+    <div class="logo-container">
+        <h2>Version 1: AI Badge (Bottom Right)</h2>
+        <p class="description">Clean badge overlay - professional and subtle</p>
+        <div class="logo-preview">
+            <img id="logo1" crossorigin="anonymous" style="max-width: 400px;">
+            <div class="ai-badge">AI</div>
+        </div>
+        <br><br>
+        <button onclick="downloadLogo('badge')">Download Badge Version</button>
+    </div>
+
+    <div class="logo-container">
+        <h2>Version 2: Integrated AI Text</h2>
+        <p class="description">AI text integrated into logo design - bold and modern</p>
+        <div class="logo-preview">
+            <img id="logo2" crossorigin="anonymous" style="max-width: 400px;">
+            <div class="ai-badge-integrated">.ai</div>
+        </div>
+        <br><br>
+        <button onclick="downloadLogo('integrated')">Download Integrated Version</button>
+    </div>
+
+    <div class="logo-container">
+        <h2>Version 3: Subtitle Style</h2>
+        <p class="description">AI subtitle below logo - clear messaging</p>
+        <canvas id="canvas3" style="max-width: 400px;"></canvas>
+        <br><br>
+        <button onclick="downloadLogo('subtitle')">Download Subtitle Version</button>
+    </div>
+
+    <script>
+        // Load original logo
+        const logoPath = '../japanika-logo-upgraded.png';
+        
+        function setupLogos() {
+            const img1 = document.getElementById('logo1');
+            const img2 = document.getElementById('logo2');
+            
+            img1.src = logoPath;
+            img2.src = logoPath;
+            
+            img1.onload = () => createSubtitleVersion();
+        }
+
+        function createSubtitleVersion() {
+            const canvas = document.getElementById('canvas3');
+            const ctx = canvas.getContext('2d');
+            const img = new Image();
+            img.crossOrigin = 'anonymous';
+            
+            img.onload = function() {
+                // Set canvas size with extra space for subtitle
+                canvas.width = img.width;
+                canvas.height = img.height + 80;
+                
+                // Draw original logo
+                ctx.drawImage(img, 0, 0);
+                
+                // Draw AI subtitle
+                ctx.font = 'bold 48px Arial';
+                const gradient = ctx.createLinearGradient(0, canvas.height - 60, canvas.width, canvas.height - 60);
+                gradient.addColorStop(0, '#667eea');
+                gradient.addColorStop(1, '#764ba2');
+                ctx.fillStyle = gradient;
+                ctx.textAlign = 'center';
+                ctx.fillText('AI-POWERED ORDERING', canvas.width / 2, canvas.height - 25);
+            };
+            
+            img.src = logoPath;
+        }
+
+        function downloadLogo(version) {
+            let canvas, filename;
+            
+            if (version === 'subtitle') {
+                canvas = document.getElementById('canvas3');
+                filename = 'japanika-ai-subtitle.png';
+            } else {
+                // Create canvas for badge or integrated versions
+                canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                const img = document.getElementById(version === 'badge' ? 'logo1' : 'logo2');
+                
+                canvas.width = img.naturalWidth;
+                canvas.height = img.naturalHeight;
+                
+                // Draw logo
+                ctx.drawImage(img, 0, 0);
+                
+                if (version === 'badge') {
+                    // Draw AI badge
+                    const badgeWidth = 80;
+                    const badgeHeight = 40;
+                    const x = canvas.width - badgeWidth - 20;
+                    const y = canvas.height - badgeHeight - 20;
+                    
+                    // Badge background
+                    const gradient = ctx.createLinearGradient(x, y, x + badgeWidth, y + badgeHeight);
+                    gradient.addColorStop(0, '#667eea');
+                    gradient.addColorStop(1, '#764ba2');
+                    
+                    ctx.fillStyle = gradient;
+                    ctx.beginPath();
+                    ctx.roundRect(x, y, badgeWidth, badgeHeight, 20);
+                    ctx.fill();
+                    
+                    // Badge shadow
+                    ctx.shadowColor = 'rgba(102, 126, 234, 0.4)';
+                    ctx.shadowBlur = 12;
+                    ctx.shadowOffsetX = 0;
+                    ctx.shadowOffsetY = 4;
+                    
+                    // Badge text
+                    ctx.shadowColor = 'transparent';
+                    ctx.fillStyle = 'white';
+                    ctx.font = 'bold 28px Arial';
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillText('AI', x + badgeWidth / 2, y + badgeHeight / 2);
+                    
+                    filename = 'japanika-ai-badge.png';
+                } else {
+                    // Draw integrated .ai text
+                    const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+                    gradient.addColorStop(0, '#667eea');
+                    gradient.addColorStop(1, '#764ba2');
+                    
+                    ctx.fillStyle = gradient;
+                    ctx.font = 'bold 72px Courier New';
+                    ctx.textAlign = 'right';
+                    ctx.fillText('.ai', canvas.width - 30, 90);
+                    
+                    filename = 'japanika-ai-integrated.png';
+                }
+            }
+            
+            // Download
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+
+        // Initialize
+        setupLogos();
+    </script>
+</body>
+</html>
