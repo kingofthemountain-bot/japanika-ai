@@ -254,39 +254,13 @@
     </div>
 
     <script>
-        const API_BASE = 'https://ros-rp.tabit.cloud';
-        const CLIENT_ID = 'syiU5W2pTidPMXd5t5nTzg';
-        const ORG_ID = '646c70c4bc858170a500ef8c';
-        
-        let accessToken = null;
-
-        async function getToken() {
-            const response = await fetch(`${API_BASE}/oauth2/token`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                body: `grant_type=client_credentials&client_id=${CLIENT_ID}`
-            });
-            
-            const data = await response.json();
-            accessToken = data.access_token;
-            return accessToken;
-        }
+        // Using local proxy to avoid CORS issues
+        const PROXY_URL = window.location.hostname === 'localhost' 
+            ? 'http://localhost:3456'
+            : 'https://japanika-proxy.onrender.com'; // Will deploy to Render later
 
         async function getDailyTotals() {
-            if (!accessToken) await getToken();
-            
-            const today = new Date().toISOString().split('T')[0];
-            
-            const response = await fetch(`${API_BASE}/reports/daily-totals?startDate=${today}&endDate=${today}`, {
-                headers: {
-                    'Authorization': `Bearer ${accessToken}`,
-                    'ros-organization': ORG_ID,
-                    'Content-Type': 'application/json'
-                }
-            });
-            
+            const response = await fetch(`${PROXY_URL}/api/daily-totals`);
             return await response.json();
         }
 
